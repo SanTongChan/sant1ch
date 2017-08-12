@@ -1,0 +1,431 @@
+\t (00:00:07) allegro 16.5 P003 (v16-5-13C) i86
+\t (00:00:07)     Journal start - Sat Aug 12 23:17:01 2017
+\t (00:00:07)         Host=WIN-T0846B6Q8VT User=Administrator Pid=6572 CPUs=4
+\t (00:00:07) 
+\t (00:00:08) Opening existing design...
+\d (00:00:10) Database opened: E:/workDir/san1ch/board/sant1ch.brd
+\t (00:00:10) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:10) trapsize 13873
+\i (00:00:10) trapsize 13568
+\i (00:00:10) trapsize 13926
+\i (00:00:11) trapsize 14823
+\i (00:00:11) trapsize 17086
+\i (00:00:12) trapsize 12413
+\i (00:00:12) generaledit 
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out -58.792 -366.920
+\t (00:00:13) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:13) trapsize 23324
+\i (00:00:13) zoom out 1 
+\i (00:00:13) setwindow pcb
+\i (00:00:13) zoom out 993.581 -214.576
+\i (00:00:13) trapsize 23324
+\i (00:00:14) zoom in 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom in -1595.328 -83.965
+\t (00:00:14) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:14) trapsize 11662
+\i (00:00:14) zoom out 1 
+\i (00:00:14) setwindow pcb
+\i (00:00:14) zoom out -1427.399 2.333
+\t (00:00:14) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:14) trapsize 23324
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in -522.447 -625.070
+\t (00:00:16) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:16) trapsize 11662
+\i (00:00:17) zoom out 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom out -440.814 -573.758
+\t (00:00:17) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:17) trapsize 23324
+\i (00:00:19) zoom in 1 
+\i (00:00:19) setwindow pcb
+\i (00:00:19) zoom in -1161.511 -522.447
+\t (00:00:19) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:19) trapsize 11662
+\i (00:00:20) zoom in 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom in -1208.157 -683.378
+\i (00:00:20) trapsize 5831
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out -1237.312 -718.363
+\i (00:00:20) trapsize 11662
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in -1465.881 -685.710
+\i (00:00:21) trapsize 5831
+\i (00:00:21) zoom in 1 
+\i (00:00:21) setwindow pcb
+\i (00:00:21) zoom in -1479.875 -682.211
+\t (00:00:21) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:21) trapsize 2915
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -1443.140 -675.797
+\t (00:00:22) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:22) trapsize 5831
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -1437.309 -678.129
+\i (00:00:22) trapsize 11662
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -1406.988 -685.127
+\t (00:00:22) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:22) trapsize 23324
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -1432.063 -881.629
+\i (00:00:22) trapsize 23324
+\i (00:00:22) zoom out 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom out -1413.405 -881.629
+\i (00:00:22) trapsize 23324
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in -1627.981 -499.123
+\t (00:00:23) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:23) trapsize 11662
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in -1627.980 -499.122
+\i (00:00:23) trapsize 5831
+\i (00:00:23) zoom in 1 
+\i (00:00:23) setwindow pcb
+\i (00:00:23) zoom in -1627.980 -511.950
+\t (00:00:23) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:23) trapsize 2915
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out -1523.607 -612.824
+\t (00:00:24) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:24) trapsize 5831
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out -1523.607 -612.823
+\i (00:00:24) trapsize 11662
+\i (00:00:24) zoom out 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom out -1380.752 -612.823
+\t (00:00:24) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:24) trapsize 23324
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in -1198.828 -816.323
+\t (00:00:24) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:24) trapsize 11662
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in -1198.828 -816.322
+\i (00:00:24) trapsize 5831
+\i (00:00:24) zoom in 1 
+\i (00:00:24) setwindow pcb
+\i (00:00:24) zoom in -1198.828 -818.654
+\t (00:00:24) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:25) trapsize 2915
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out -1169.090 -831.481
+\t (00:00:25) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:25) trapsize 5831
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out -1169.090 -831.482
+\i (00:00:25) trapsize 11662
+\i (00:00:25) zoom out 1 
+\i (00:00:25) setwindow pcb
+\i (00:00:25) zoom out -1169.090 -831.482
+\t (00:00:25) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:25) trapsize 23324
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in -732.358 -751.017
+\t (00:00:26) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:26) trapsize 11662
+\i (00:00:26) zoom in 1 
+\i (00:00:26) setwindow pcb
+\i (00:00:26) zoom in -732.358 -751.016
+\i (00:00:26) trapsize 5831
+\i (00:00:28) zoom in 1 
+\i (00:00:28) setwindow pcb
+\i (00:00:28) zoom in -745.186 -619.238
+\t (00:00:28) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:28) trapsize 2915
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out -456.557 -602.329
+\t (00:00:30) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:30) trapsize 5831
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in -780.754 -497.373
+\t (00:00:31) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:31) trapsize 2915
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in -779.588 -495.624
+\i (00:00:31) trapsize 1458
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out -755.098 -496.498
+\i (00:00:32) trapsize 2915
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out -752.766 -498.830
+\t (00:00:32) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:32) trapsize 5831
+\i (00:00:32) zoom out 1 
+\i (00:00:32) setwindow pcb
+\i (00:00:32) zoom out -732.941 -506.994
+\i (00:00:32) trapsize 11662
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 58.309 -360.055
+\i (00:00:33) trapsize 5831
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 58.309 -360.055
+\t (00:00:33) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:33) trapsize 2915
+\i (00:00:33) zoom in 1 
+\i (00:00:33) setwindow pcb
+\i (00:00:33) zoom in 68.222 -362.387
+\i (00:00:33) trapsize 1458
+\i (00:00:35) zoom out 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom out 70.554 -379.588
+\i (00:00:35) trapsize 2915
+\i (00:00:35) zoom out 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom out 70.554 -380.171
+\t (00:00:35) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:35) trapsize 5831
+\i (00:00:35) zoom out 1 
+\i (00:00:35) setwindow pcb
+\i (00:00:35) zoom out 70.555 -382.503
+\i (00:00:35) trapsize 11662
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 116.618 -389.500
+\t (00:00:36) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:36) trapsize 23324
+\i (00:00:37) zoom out 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom out -1203.493 -107.288
+\i (00:00:37) trapsize 23324
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in -1371.422 -74.635
+\t (00:00:37) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:37) trapsize 11662
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1436.728 -69.970
+\t (00:00:38) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:38) trapsize 23324
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1506.699 -93.294
+\i (00:00:38) trapsize 23324
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1679.293 -195.917
+\i (00:00:38) trapsize 23324
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out -1679.293 -195.917
+\i (00:00:38) trapsize 23324
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in -1702.616 -181.923
+\t (00:00:38) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:38) trapsize 11662
+\i (00:00:39) zoom in 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom in -1749.263 -170.261
+\i (00:00:39) trapsize 5831
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out -1748.096 -166.763
+\i (00:00:39) trapsize 11662
+\i (00:00:39) zoom out 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom out -1748.097 -166.762
+\t (00:00:39) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:39) trapsize 23324
+\i (00:00:51) zoom in 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom in 144.606 -125.947
+\t (00:00:51) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:51) trapsize 11662
+\i (00:00:51) zoom out 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom out -412.826 -30.320
+\t (00:00:51) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:00:51) trapsize 23324
+\i (00:00:51) zoom out 1 
+\i (00:00:51) setwindow pcb
+\i (00:00:51) zoom out -970.258 60.641
+\i (00:00:51) trapsize 23324
+\i (00:00:52) zoom in 1 
+\i (00:00:52) setwindow pcb
+\i (00:00:52) zoom in -1422.734 -135.276
+\t (00:00:52) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:52) trapsize 11662
+\i (00:00:52) zoom in 1 
+\i (00:00:52) setwindow pcb
+\i (00:00:52) zoom in -1413.405 -156.267
+\i (00:00:52) trapsize 5831
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -1385.417 -39.649
+\t (00:00:53) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (00:00:53) trapsize 2915
+\i (00:00:53) zoom in 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom in -1385.416 -39.649
+\i (00:00:53) trapsize 1458
+\i (00:00:54) zoom out 1 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) zoom out -1384.542 -42.856
+\i (00:00:54) trapsize 2915
+\i (00:00:54) zoom out 1 
+\i (00:00:54) setwindow pcb
+\i (00:00:54) zoom out -1383.375 -55.683
+\t (00:00:54) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (00:00:54) trapsize 5831
+\i (00:00:56) zoom out 1 
+\i (00:00:56) setwindow pcb
+\i (00:00:56) zoom out -1379.876 -81.340
+\i (00:00:56) trapsize 11662
+\i (00:01:02) zoom out 1 
+\i (00:01:02) setwindow pcb
+\i (00:01:02) zoom out -589.209 -193.292
+\t (00:01:02) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (00:01:02) trapsize 23324
+\i (00:01:57) pick grid -671.717 1697.951
+\t (00:01:57) last pick:  -672.000  1698.000
+\i (00:02:03) shape global param 
+\i (00:02:03) generaledit 
+\i (00:02:07) setwindow form.dyn_xshape
+\i (00:02:07) FORM dyn_xshape void_controls  
+\i (00:02:14) FORM dyn_xshape clearances  
+\i (00:02:16) FORM dyn_xshape thermal_relief_connects  
+\i (00:02:17) FORM dyn_xshape void_controls  
+\i (00:02:22) FORM dyn_xshape shape_fill  
+\i (00:02:25) FORM dyn_xshape cancel  
+\i (00:02:35) setwindow pcb
+\i (00:02:35) cmgr 
+\i (00:02:35) setwindow cmgr
+\i (00:02:35) cm newView ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:02:35) cm newView ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" 4:Xtalk/SSN )
+\i (00:02:36) cm fetch DRC_IS_UPTODATE ( System "System" ) System
+\i (00:02:36) cm fetch ONLINE_DRC ( System "System" ) System
+\i (00:02:36) setwindow pcb
+\i (00:02:36) generaledit 
+\i (00:02:42) setwindow cmgr
+\i (00:02:42) cm select ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" 4:Xtalk/SSN )
+\i (00:02:42) cm select ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" 4:Xtalk/SSN )
+\i (00:02:42) cm select ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" 4:Xtalk/SSN )
+\i (00:02:48) cm select ( worksheet 53:Electrical "1:Electrical Constraint Set" "2:Signal Integrity" 4:Xtalk/SSN )
+\i (00:02:49) cm newView ( worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 81:Line )
+\i (00:02:50) cm fetch LINE_TO_LINE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_LINE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_THRUPIN_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_THRUPIN_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_SMDPIN_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_SMDPIN_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_TESTPIN_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_TESTPIN_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_THRUVIA_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_THRUVIA_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch BBV_TO_LINE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch BBV_TO_LINE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_TESTVIA_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_TESTVIA_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch MVIA_TO_LINE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch MVIA_TO_LINE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch LINE_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch LINE_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch BONDPAD_TO_LINE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch BONDPAD_TO_LINE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:50) cm fetch HOLE_TO_LINE_SPACING ( Design "sant1ch" ) Design
+\i (00:02:50) cm fetch HOLE_TO_LINE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:02:52) cm select ( worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 81:Line )
+\i (00:02:52) cm select ( worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 81:Line )
+\i (00:02:52) cm select ( worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 81:Line )
+\i (00:02:55) cm fetch MIN_LINE_WIDTH ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MIN_LINE_WIDTH ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch MAX_LINE_WIDTH ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MAX_LINE_WIDTH ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch MIN_NECK_WIDTH ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MIN_NECK_WIDTH ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch MAXIMUM_NECK_LENGTH ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MAXIMUM_NECK_LENGTH ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm select ( frame ( workbook 55:Physical "56:Physical Constraint Set" "57:All Layers" ) )
+\i (00:02:55) cm fetch DIFFP_MIN_SPACE ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch DIFFP_MIN_SPACE ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch DIFFP_PRIMARY_GAP ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch DIFFP_PRIMARY_GAP ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch DIFFP_NECK_GAP ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch DIFFP_COUPLED_PLUS ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch DIFFP_COUPLED_PLUS ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch DIFFP_COUPLED_MINUS ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch DIFFP_COUPLED_MINUS ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch DIFFP_NECK_GAP ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch MIN_BVIA_STAGGER ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MIN_BVIA_STAGGER ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch MAX_BVIA_STAGGER ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch MAX_BVIA_STAGGER ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch PAD_PAD_DIRECT_CONNECT ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch PAD_PAD_DIRECT_CONNECT ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch ALLOW_ON_ETCH_SUBCLASS ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch ALLOW_ON_ETCH_SUBCLASS ( Design "sant1ch" ) "Physical CSet"
+\i (00:02:55) cm fetch TS_ALLOWED ( Design "sant1ch" ) Design
+\i (00:02:55) cm fetch TS_ALLOWED ( Design "sant1ch" ) "Physical CSet"
+\i (00:03:06) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:03:06) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:03:06) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:03:06) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:03:06) cm select ( worksheet 55:Physical "56:Physical Constraint Set" "57:All Layers" "58:All Layers" )
+\i (00:03:08) cm select ( frame ( workbook 78:Spacing "79:Spacing Constraint Set" "80:All Layers" ) )
+\i (00:03:09) cm select ( worksheet 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 81:Line )
+\i (00:03:12) cm setColumnFilter ( column 78:Spacing "79:Spacing Constraint Set" "80:All Layers" 84:Shape 0:Type ) *
+\i (00:03:12) cm expand ( row ( Design "sant1ch" ) )
+\i (00:03:12) cm expand ( row ( Design "sant1ch" ) )
+\i (00:03:12) cm select tab 84:Shape
+\i (00:03:12) cm fetch THRUPIN_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch THRUPIN_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch SHAPE_TO_SMDPIN_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch SHAPE_TO_SMDPIN_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch SHAPE_TO_TESTPIN_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch SHAPE_TO_TESTPIN_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch SHAPE_TO_THRUVIA_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch SHAPE_TO_THRUVIA_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch BBV_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch BBV_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch SHAPE_TO_TESTVIA_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch SHAPE_TO_TESTVIA_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch MVIA_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch MVIA_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch SHAPE_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch SHAPE_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch BONDPAD_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch BONDPAD_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:12) cm fetch HOLE_TO_SHAPE_SPACING ( Design "sant1ch" ) Design
+\i (00:03:12) cm fetch HOLE_TO_SHAPE_SPACING ( Design "sant1ch" ) "Spacing CSet"
+\i (00:03:18) cm exit
+\i (00:03:20) setwindow pcb
+\i (00:03:20) open 
+\e (00:03:20) Do you want to save the changes you made to sant1ch.brd?
+\i (00:03:23) fillin no 
+\i (00:03:33) fillin "E:\workDir\san4chV2\sanT4ch_finish\Board\sanT_4ch.brd"
+\i (00:03:33) cd "E:\workDir\san4chV2\sanT4ch_finish\Board"
+\t (00:03:33) Opening existing design...
+\t (00:03:33) Grids are drawn 64.0, 64.0 apart for enhanced viewability.
+\i (00:03:33) trapsize 420
+\t (00:03:33)     Journal end - Sat Aug 12 23:20:27 2017

@@ -1,0 +1,91 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : sant1ch.brd                                   )
+(    Software Version : 16.5P002                                      )
+(    Date/Time        : Tue Aug 08 23:06:38 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------
+
+RIPUP_ETCH FALSE;
+RIPUP_DELETE_FIRST_SEGMENT FALSE;
+RIPUP_RETAIN_BONDWIRE FALSE;
+RIPUP_SYMBOLS NEVER;
+Missing symbol has error FALSE;
+SCHEMATIC_DIRECTORY 'E:/workDir/san1ch/sch/allegro';
+BOARD_DIRECTORY '';
+OLD_BOARD_NAME 'E:/workDir/san1ch/board/sant1ch.brd';
+NEW_BOARD_NAME 'E:/workDir/san1ch/board/sant1ch.brd';
+
+CmdLine: netrev -$ -i E:/workDir/san1ch/sch/allegro -y 3 E:/workDir/san1ch/board/#Taaaaaa02360.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read E:/workDir/san1ch/sch/allegro/pstchip.dat 
+   Finished reading E:/workDir/san1ch/sch/allegro/pstchip.dat (00:00:00.04)
+Starting to read E:/workDir/san1ch/sch/allegro/pstxprt.dat 
+   Finished reading E:/workDir/san1ch/sch/allegro/pstxprt.dat (00:00:00.00)
+Starting to read E:/workDir/san1ch/sch/allegro/pstxnet.dat 
+   Finished reading E:/workDir/san1ch/sch/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/local/pcb/symbols 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/pcb/pcb_lib/symbols 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/pcb/allegrolib/symbols 
+           E:\workDir\PCBSymbol\ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/local/pcb/padstacks 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/pcb/pcb_lib/symbols 
+           F:/Program Files (x86)/Cadence/SPB_16.5/share/pcb/allegrolib/symbols 
+           E:\workDir\PCBSymbol\ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Aug 8 23:06:38 2017
+   DESIGN NAME : 'SAN1CH'
+   PACKAGING ON Apr 21 2011 10:02:30
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:00:35
+elapsed time  0:00:01
+
