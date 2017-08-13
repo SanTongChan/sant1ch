@@ -1,10 +1,6 @@
 M48
 INCH,TZ
-;EXTENTS: -1.969  -1.969  5.118   1.969   
-;LEADER: 12 
-;HEADER: 
-;CODE  : ASCII 
-;FILE  : sant1ch.rou for board sant1ch.brd
+T01C.0276
 %
 G90
 F1
