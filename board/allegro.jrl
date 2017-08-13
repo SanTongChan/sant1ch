@@ -14178,3 +14178,798 @@
 \t (10:35:21) last pick:  2300.000  882.000
 \i (10:35:21) prepopup 2304.362 909.617
 \i (10:35:22) pick grid 2080.457 1226.816
+\t (10:35:22) last pick:  2080.000  1227.000
+\i (10:35:22) zoom out 1 
+\i (10:35:22) setwindow pcb
+\i (10:35:22) zoom out 2061.798 1287.458
+\i (10:35:22) trapsize 23324
+\i (10:35:23) zoom in 1 
+\i (10:35:23) setwindow pcb
+\i (10:35:23) zoom in 1730.604 592.417
+\t (10:35:23) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:35:23) trapsize 11662
+\i (10:35:23) zoom in 1 
+\i (10:35:23) setwindow pcb
+\i (10:35:23) zoom in 1732.937 604.079
+\i (10:35:23) trapsize 5831
+\i (10:35:23) zoom out 1 
+\i (10:35:23) setwindow pcb
+\i (10:35:23) zoom out 1734.103 609.910
+\i (10:35:23) trapsize 11662
+\i (10:35:24) zoom out 1 
+\i (10:35:24) setwindow pcb
+\i (10:35:24) zoom out 1734.104 609.910
+\t (10:35:24) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:35:24) trapsize 23324
+\i (10:35:24) zoom out 1 
+\i (10:35:24) setwindow pcb
+\i (10:35:24) zoom out 1805.239 639.064
+\i (10:35:24) trapsize 23324
+\i (10:35:37) prmed 
+\i (10:35:39) setwindow form.prmedit
+\i (10:35:39) FORM prmedit text  
+\i (10:35:40) FORM prmedit design  
+\i (10:36:04) setwindow pcb
+\i (10:36:04) prmed 
+\i (10:36:16) setwindow form.prmedit
+\i (10:36:16) FORM prmedit width 8086.614 
+\i (10:36:16) FORM prmedit done  
+\i (10:36:16) setwindow pcb
+\i (10:36:16) trapsize 23324
+\i (10:36:16) generaledit 
+\i (10:36:18) zoom out 1 
+\i (10:36:18) setwindow pcb
+\i (10:36:18) zoom out 2444.303 -918.946
+\i (10:36:18) trapsize 25478
+\i (10:36:18) zoom out 1 
+\i (10:36:18) setwindow pcb
+\i (10:36:18) zoom out 2897.732 -1180.537
+\i (10:36:18) trapsize 25478
+\i (10:36:18) zoom out 1 
+\i (10:36:18) setwindow pcb
+\i (10:36:18) zoom out 2907.924 -1180.537
+\i (10:36:18) trapsize 25478
+\i (10:36:18) zoom out 1 
+\i (10:36:18) setwindow pcb
+\i (10:36:18) zoom out 2918.115 -1180.537
+\i (10:36:18) trapsize 25478
+\i (10:36:18) zoom out 1 
+\i (10:36:18) setwindow pcb
+\i (10:36:18) zoom out 2918.115 -1180.537
+\i (10:36:18) trapsize 25478
+\i (10:36:19) zoom out 1 
+\i (10:36:19) setwindow pcb
+\i (10:36:19) zoom out 2918.115 -1180.537
+\i (10:36:19) trapsize 25478
+\i (10:36:20) zoom out 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom out 2760.153 -910.474
+\i (10:36:20) trapsize 25478
+\i (10:36:20) zoom out 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom out 2775.440 -879.900
+\i (10:36:20) trapsize 25478
+\i (10:36:20) zoom in 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom in 2780.535 -859.518
+\t (10:36:20) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:36:20) trapsize 12739
+\i (10:36:20) zoom in 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom in 2783.083 -854.423
+\i (10:36:20) trapsize 6369
+\i (10:36:20) zoom in 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom in 2784.358 -853.149
+\t (10:36:20) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:36:20) trapsize 3185
+\i (10:36:20) zoom out 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom out 2784.358 -853.149
+\t (10:36:20) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:36:20) trapsize 6369
+\i (10:36:20) zoom out 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom out 2784.358 -853.149
+\i (10:36:20) trapsize 12739
+\i (10:36:20) zoom out 1 
+\i (10:36:20) setwindow pcb
+\i (10:36:20) zoom out 2784.357 -853.149
+\t (10:36:20) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:36:20) trapsize 25478
+\i (10:36:21) zoom out 1 
+\i (10:36:21) setwindow pcb
+\i (10:36:21) zoom out 2790.726 -844.232
+\i (10:36:21) trapsize 25478
+\i (10:36:21) zoom out 1 
+\i (10:36:21) setwindow pcb
+\i (10:36:21) zoom out 2790.726 -844.232
+\i (10:36:21) trapsize 25478
+\i (10:36:28) ncdrill legend 
+\i (10:36:32) setwindow form.nc_drilllegend
+\i (10:36:32) FORM nc_drilllegend done  
+\i (10:36:36) setwindow pcb
+\i (10:36:36) pick grid 1598.371 1193.983
+\t (10:36:36) last pick:  1598.000  1194.000
+\w (10:36:36) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:36:37) pick grid 1593.275 1224.556
+\t (10:36:37) last pick:  1593.000  1225.000
+\w (10:36:37) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:36:38) pick grid 1567.798 1219.460
+\t (10:36:38) last pick:  1568.000  1219.000
+\w (10:36:38) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:36:40) zoom out 1 
+\i (10:36:40) setwindow pcb
+\i (10:36:40) zoom out 1858.243 985.066
+\i (10:36:40) trapsize 25478
+\i (10:36:40) zoom out 1 
+\i (10:36:40) setwindow pcb
+\i (10:36:40) zoom out 1888.816 944.301
+\i (10:36:40) trapsize 25478
+\i (10:36:41) zoom out 1 
+\i (10:36:41) setwindow pcb
+\i (10:36:41) zoom out 1165.250 1137.932
+\i (10:36:41) trapsize 25478
+\i (10:36:43) pick grid -332.837 1346.849
+\t (10:36:43) last pick:  -333.000  1347.000
+\t (10:36:43) NC Drill Legend generation successful
+\i (10:36:43) done 
+\i (10:36:43) generaledit 
+\i (10:36:48) move 
+\t (10:36:48) Select element(s) to move.
+\i (10:36:52) setwindow form.find
+\i (10:36:52) FORM find text NO 
+\i (10:36:53) FORM find figures YES 
+\i (10:36:54) setwindow pcb
+\i (10:36:54) pick grid -57.678 1341.753
+\t (10:36:54) last pick:  -58.000  1342.000
+\i (10:36:57) zoom out 1 
+\i (10:36:57) setwindow pcb
+\i (10:36:57) zoom out 2836.586 1122.645
+\i (10:36:57) trapsize 25478
+\i (10:36:57) zoom out 1 
+\i (10:36:57) setwindow pcb
+\i (10:36:57) zoom out 4625.119 648.760
+\i (10:36:57) trapsize 25478
+\i (10:36:57) zoom out 1 
+\i (10:36:57) setwindow pcb
+\i (10:36:57) zoom out 4874.800 551.945
+\i (10:36:57) trapsize 25478
+\i (10:36:57) prepopup 4976.711 715.002
+\i (10:37:01) cancel 
+\i (10:37:01) generaledit 
+\i (10:37:02) undo 
+\i (10:37:02) trapsize 25478
+\i (10:37:02) generaledit 
+\i (10:37:02) undo 
+\i (10:37:02) trapsize 25478
+\i (10:37:03) generaledit 
+\i (10:37:04) zoom out 1 
+\i (10:37:04) setwindow pcb
+\i (10:37:04) zoom out 2056.969 434.748
+\i (10:37:04) trapsize 25478
+\i (10:37:05) redo 
+\i (10:37:05) trapsize 25478
+\i (10:37:05) replay C:/Users/ADMINI~1/AppData/Local/Temp/#Taaaany06572.tmp 
+\i (10:37:05) scriptmode +i 
+\i (10:37:05) ncdrill legend 
+\i (10:37:05) setwindow form.nc_drilllegend 
+\i (10:37:05) FORM nc_drilllegend done 
+\i (10:37:06) setwindow pcb 
+\i (10:37:06) pick grid 1598.371 1193.983 
+\t (10:37:06) last pick:  1598.000  1194.000
+\w (10:37:06) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:06) pick grid 1593.275 1224.556 
+\t (10:37:06) last pick:  1593.000  1225.000
+\w (10:37:06) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:06) pick grid 1567.798 1219.460 
+\t (10:37:06) last pick:  1568.000  1219.000
+\w (10:37:06) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:06) setwindow pcb 
+\i (10:37:06) zoom out 1858.243 985.066 
+\i (10:37:06) zoom out 1858.243 985.066
+\i (10:37:06) trapsize 25478
+\i (10:37:06) trapsize 25478 
+\i (10:37:06) setwindow pcb 
+\i (10:37:06) zoom out 1888.816 944.301 
+\i (10:37:06) zoom out 1888.816 944.301
+\i (10:37:06) trapsize 25478
+\i (10:37:06) trapsize 25478 
+\i (10:37:06) setwindow pcb 
+\i (10:37:06) zoom out 1165.250 1137.932 
+\i (10:37:06) zoom out 1165.250 1137.932
+\i (10:37:06) trapsize 25478
+\i (10:37:06) trapsize 25478 
+\i (10:37:06) pick grid -332.837 1346.849 
+\t (10:37:06) last pick:  -333.000  1347.000
+\t (10:37:06) NC Drill Legend generation successful
+\i (10:37:06) done 
+\i (10:37:07) trapsize 25478
+\i (10:37:07) generaledit 
+\i (10:37:07) zoom out 1 
+\i (10:37:07) setwindow pcb
+\i (10:37:07) zoom out 4777.985 -141.048
+\i (10:37:07) trapsize 25478
+\i (10:37:07) zoom out 1 
+\i (10:37:07) setwindow pcb
+\i (10:37:07) zoom out 4777.985 -141.048
+\i (10:37:07) trapsize 25478
+\i (10:37:07) zoom out 1 
+\i (10:37:07) setwindow pcb
+\i (10:37:07) zoom out 4777.985 -141.048
+\i (10:37:07) trapsize 25478
+\i (10:37:08) zoom in 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom in 4721.934 -100.283
+\t (10:37:08) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:37:08) trapsize 12739
+\i (10:37:08) zoom in 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom in 4721.934 -100.283
+\i (10:37:08) trapsize 6369
+\i (10:37:08) zoom in 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom in 4721.935 -100.283
+\t (10:37:08) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:37:08) trapsize 3185
+\i (10:37:08) zoom out 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom out 4721.935 -100.282
+\t (10:37:08) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:37:08) trapsize 6369
+\i (10:37:08) zoom out 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom out 4721.935 -100.283
+\i (10:37:08) trapsize 12739
+\i (10:37:08) zoom out 1 
+\i (10:37:08) setwindow pcb
+\i (10:37:08) zoom out 4721.935 -100.283
+\t (10:37:08) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:37:08) trapsize 25478
+\i (10:37:09) zoom out 1 
+\i (10:37:09) setwindow pcb
+\i (10:37:09) zoom out 4716.839 -100.283
+\i (10:37:09) trapsize 25478
+\i (10:37:10) undo 
+\i (10:37:10) trapsize 25478
+\i (10:37:10) generaledit 
+\i (10:37:12) redo 
+\i (10:37:12) trapsize 25478
+\i (10:37:12) replay C:/Users/ADMINI~1/AppData/Local/Temp/#Taaaanz06572.tmp 
+\i (10:37:12) scriptmode +i 
+\i (10:37:12) ncdrill legend 
+\i (10:37:12) setwindow form.nc_drilllegend 
+\i (10:37:12) FORM nc_drilllegend done 
+\i (10:37:13) setwindow pcb 
+\i (10:37:13) pick grid 1598.371 1193.983 
+\t (10:37:13) last pick:  1598.000  1194.000
+\w (10:37:13) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:13) pick grid 1593.275 1224.556 
+\t (10:37:13) last pick:  1593.000  1225.000
+\w (10:37:13) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:13) pick grid 1567.798 1219.460 
+\t (10:37:13) last pick:  1568.000  1219.000
+\w (10:37:13) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:37:13) setwindow pcb 
+\i (10:37:13) zoom out 1858.243 985.066 
+\i (10:37:13) zoom out 1858.243 985.066
+\i (10:37:13) trapsize 25478
+\i (10:37:13) trapsize 25478 
+\i (10:37:13) setwindow pcb 
+\i (10:37:13) zoom out 1888.816 944.301 
+\i (10:37:13) zoom out 1888.816 944.301
+\i (10:37:13) trapsize 25478
+\i (10:37:13) trapsize 25478 
+\i (10:37:13) setwindow pcb 
+\i (10:37:13) zoom out 1165.250 1137.932 
+\i (10:37:13) zoom out 1165.250 1137.932
+\i (10:37:13) trapsize 25478
+\i (10:37:13) trapsize 25478 
+\i (10:37:13) pick grid -332.837 1346.849 
+\t (10:37:13) last pick:  -333.000  1347.000
+\t (10:37:13) NC Drill Legend generation successful
+\i (10:37:13) done 
+\i (10:37:13) trapsize 25478
+\i (10:37:13) generaledit 
+\i (10:37:14) undo 
+\i (10:37:14) trapsize 25478
+\i (10:37:15) generaledit 
+\i (10:37:15) zoom out 1 
+\i (10:37:15) setwindow pcb
+\i (10:37:15) zoom out 1537.224 1051.308
+\i (10:37:15) trapsize 25478
+\i (10:37:16) zoom in 1 
+\i (10:37:16) setwindow pcb
+\i (10:37:16) zoom in 2041.683 822.009
+\t (10:37:16) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:37:16) trapsize 12739
+\i (10:37:17) zoom out 1 
+\i (10:37:17) setwindow pcb
+\i (10:37:17) zoom out 2054.422 816.914
+\t (10:37:17) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:37:17) trapsize 25478
+\i (10:37:17) zoom out 1 
+\i (10:37:17) setwindow pcb
+\i (10:37:17) zoom out 2158.880 740.480
+\i (10:37:17) trapsize 25478
+\i (10:37:17) zoom out 1 
+\i (10:37:17) setwindow pcb
+\i (10:37:17) zoom out 2174.166 720.098
+\i (10:37:17) trapsize 25478
+\i (10:37:29) prmed 
+\i (10:37:38) setwindow form.prmedit
+\i (10:37:38) FORM prmedit width 7086.614 
+\i (10:37:38) FORM prmedit done  
+\i (10:37:38) setwindow pcb
+\i (10:37:38) trapsize 23324
+\i (10:37:38) generaledit 
+\i (10:37:39) zoom out 1 
+\i (10:37:39) setwindow pcb
+\i (10:37:39) zoom out 2033.810 -1119.528
+\i (10:37:39) trapsize 23324
+\i (10:37:39) zoom out 1 
+\i (10:37:39) setwindow pcb
+\i (10:37:39) zoom out 2099.116 -1152.181
+\i (10:37:39) trapsize 23324
+\i (10:37:40) zoom in 1 
+\i (10:37:40) setwindow pcb
+\i (10:37:40) zoom in 2108.445 -1156.846
+\t (10:37:40) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:37:40) trapsize 11662
+\i (10:37:40) zoom in 1 
+\i (10:37:40) setwindow pcb
+\i (10:37:40) zoom in 2108.446 -1156.846
+\i (10:37:40) trapsize 5831
+\i (10:37:41) zoom out 1 
+\i (10:37:41) setwindow pcb
+\i (10:37:41) zoom out 2108.446 -1156.846
+\i (10:37:41) trapsize 11662
+\i (10:37:41) zoom out 1 
+\i (10:37:41) setwindow pcb
+\i (10:37:41) zoom out 2108.447 -1156.845
+\t (10:37:41) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:37:41) trapsize 23324
+\i (10:37:41) zoom out 1 
+\i (10:37:41) setwindow pcb
+\i (10:37:41) zoom out 2108.445 -1156.846
+\i (10:37:41) trapsize 23324
+\i (10:37:41) zoom out 1 
+\i (10:37:41) setwindow pcb
+\i (10:37:41) zoom out 2117.774 -1161.511
+\i (10:37:41) trapsize 23324
+\i (10:37:45) zoom out 1 
+\i (10:37:45) setwindow pcb
+\i (10:37:45) zoom out 1977.833 564.429
+\i (10:37:45) trapsize 23324
+\i (10:37:45) zoom out 1 
+\i (10:37:45) setwindow pcb
+\i (10:37:45) zoom out 2206.404 298.541
+\i (10:37:45) trapsize 23324
+\i (10:37:54) ncdrill legend 
+\i (10:37:57) setwindow form.nc_drilllegend
+\i (10:37:57) FORM nc_drilllegend done  
+\i (10:37:59) setwindow pcb
+\i (10:37:59) pick grid -951.599 -988.917
+\t (10:37:59) last pick:  -952.000  -989.000
+\w (10:37:59) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:38:06) pick grid 1585.998 1212.822
+\t (10:38:06) last pick:  1586.000  1213.000
+\w (10:38:06) WARNING(SPMHSK-25): Design extents not sufficient. Please select origin again.
+\i (10:38:14) prepopup 1427.399 1324.775
+\i (10:38:15) pop Cancel 
+\i (10:38:15) done 
+\i (10:38:15) generaledit 
+\i (10:38:17) prmed 
+\i (10:38:24) undo 
+\i (10:38:24) generaledit 
+\i (10:38:25) zoom out 1 
+\i (10:38:25) setwindow pcb
+\i (10:38:25) zoom out 2276.374 139.941
+\i (10:38:25) trapsize 23324
+\i (10:38:25) zoom out 1 
+\i (10:38:25) setwindow pcb
+\i (10:38:25) zoom out 2309.027 79.300
+\i (10:38:25) trapsize 23324
+\i (10:38:26) zoom out 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom out 2341.680 -32.653
+\i (10:38:26) trapsize 23324
+\i (10:38:26) zoom in 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom in 2267.045 -121.282
+\t (10:38:26) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:38:26) trapsize 11662
+\i (10:38:26) zoom in 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom in 2260.049 -114.285
+\i (10:38:26) trapsize 5831
+\i (10:38:26) zoom in 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom in 2260.049 -114.285
+\t (10:38:26) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:38:26) trapsize 2915
+\i (10:38:26) zoom out 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom out 2258.883 -112.536
+\t (10:38:26) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:38:26) trapsize 5831
+\i (10:38:26) zoom out 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom out 2258.883 -112.536
+\i (10:38:26) trapsize 11662
+\i (10:38:26) zoom out 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom out 2258.884 -112.535
+\t (10:38:26) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:38:26) trapsize 23324
+\i (10:38:26) zoom out 1 
+\i (10:38:26) setwindow pcb
+\i (10:38:26) zoom out 2243.721 -93.294
+\i (10:38:26) trapsize 23324
+\i (10:38:37) prmed 
+\i (10:38:43) setwindow form.prmedit
+\i (10:38:43) FORM prmedit height 4937.008 
+\i (10:38:46) FORM prmedit width 8086.614 
+\i (10:38:46) FORM prmedit done  
+\i (10:38:46) setwindow pcb
+\i (10:38:46) trapsize 23324
+\i (10:38:46) generaledit 
+\i (10:38:47) zoom out 1 
+\i (10:38:47) setwindow pcb
+\i (10:38:47) zoom out 2738.180 -615.741
+\i (10:38:47) trapsize 29248
+\i (10:38:47) zoom out 1 
+\i (10:38:47) setwindow pcb
+\i (10:38:47) zoom out 4226.154 -465.173
+\i (10:38:47) trapsize 29248
+\i (10:38:47) zoom out 1 
+\i (10:38:47) setwindow pcb
+\i (10:38:47) zoom out 4313.897 -535.368
+\i (10:38:47) trapsize 29248
+\i (10:38:48) zoom out 1 
+\i (10:38:48) setwindow pcb
+\i (10:38:48) zoom out 4384.092 -582.164
+\i (10:38:48) trapsize 29248
+\i (10:38:52) prmed 
+\i (10:38:57) setwindow form.prmedit
+\i (10:38:57) FORM prmedit height 3937.008 
+\i (10:38:57) FORM prmedit done  
+\i (10:38:57) setwindow pcb
+\i (10:38:57) trapsize 25478
+\i (10:38:57) generaledit 
+\i (10:38:58) zoom out 1 
+\i (10:38:58) setwindow pcb
+\i (10:38:58) zoom out 2434.039 -1542.320
+\i (10:38:58) trapsize 25478
+\i (10:38:58) zoom out 1 
+\i (10:38:58) setwindow pcb
+\i (10:38:58) zoom out 2484.994 -1542.320
+\i (10:38:58) trapsize 25478
+\i (10:38:59) zoom out 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom out 2541.045 -1567.798
+\i (10:38:59) trapsize 25478
+\i (10:38:59) zoom in 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom in 2576.714 -1567.798
+\t (10:38:59) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:38:59) trapsize 12739
+\i (10:38:59) zoom in 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom in 2576.714 -1567.798
+\i (10:38:59) trapsize 6369
+\i (10:38:59) zoom in 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom in 2577.988 -1566.524
+\t (10:38:59) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:38:59) trapsize 3185
+\i (10:38:59) zoom out 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom out 2580.536 -1559.517
+\t (10:38:59) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:38:59) trapsize 6369
+\i (10:38:59) zoom out 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom out 2580.536 -1559.518
+\i (10:38:59) trapsize 12739
+\i (10:38:59) zoom out 1 
+\i (10:38:59) setwindow pcb
+\i (10:38:59) zoom out 2580.536 -1555.766
+\t (10:38:59) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:38:59) trapsize 25478
+\i (10:39:00) zoom out 1 
+\i (10:39:00) setwindow pcb
+\i (10:39:00) zoom out 2617.478 -1491.365
+\i (10:39:00) trapsize 25478
+\i (10:39:05) prmed 
+\i (10:39:10) setwindow form.prmedit
+\i (10:39:10) FORM prmedit width 9086.614 
+\i (10:39:13) FORM prmedit height 5937.008 
+\i (10:39:13) FORM prmedit done  
+\i (10:39:13) setwindow pcb
+\i (10:39:13) trapsize 25478
+\i (10:39:13) generaledit 
+\i (10:39:14) zoom out 1 
+\i (10:39:14) setwindow pcb
+\i (10:39:14) zoom out 2133.402 -878.059
+\i (10:39:14) trapsize 35172
+\i (10:39:14) zoom out 1 
+\i (10:39:14) setwindow pcb
+\i (10:39:14) zoom out 3884.092 -554.596
+\i (10:39:14) trapsize 35172
+\i (10:39:21) ncdrill legend 
+\i (10:39:22) setwindow form.nc_drilllegend
+\i (10:39:22) FORM nc_drilllegend done  
+\i (10:39:25) setwindow pcb
+\i (10:39:25) pick grid 1717.506 1337.650
+\t (10:39:25) last pick:  1718.000  1338.000
+\t (10:39:25) NC Drill Legend generation successful
+\i (10:39:25) done 
+\i (10:39:25) generaledit 
+\i (10:39:25) prepopup 1590.887 2800.799
+\i (10:39:31) pick grid -1075.139 -1314.308
+\t (10:39:31) last pick:  -1075.000  -1314.000
+\i (10:39:32) zoom in 1 
+\i (10:39:32) setwindow pcb
+\i (10:39:32) zoom in -1476.098 -639.008
+\t (10:39:32) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:32) trapsize 17586
+\i (10:39:32) zoom in 1 
+\i (10:39:32) setwindow pcb
+\i (10:39:32) zoom in -1476.098 -639.008
+\i (10:39:32) trapsize 8793
+\i (10:39:34) zoom in 1 
+\i (10:39:34) setwindow pcb
+\i (10:39:34) zoom in -1384.651 111.911
+\t (10:39:34) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:39:34) trapsize 4396
+\i (10:39:34) zoom in 1 
+\i (10:39:34) setwindow pcb
+\i (10:39:34) zoom in -1379.375 92.567
+\i (10:39:34) trapsize 2198
+\i (10:39:34) zoom out 1 
+\i (10:39:34) setwindow pcb
+\i (10:39:34) zoom out -1353.436 75.861
+\i (10:39:34) trapsize 4396
+\i (10:39:34) zoom out 1 
+\i (10:39:34) setwindow pcb
+\i (10:39:34) zoom out -1339.367 74.101
+\t (10:39:34) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:34) trapsize 8793
+\i (10:39:35) zoom out 1 
+\i (10:39:35) setwindow pcb
+\i (10:39:35) zoom out -1312.988 74.102
+\i (10:39:35) trapsize 17586
+\i (10:39:35) zoom out 1 
+\i (10:39:35) setwindow pcb
+\i (10:39:35) zoom out -1096.242 98.722
+\t (10:39:35) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:39:35) trapsize 35172
+\i (10:39:36) zoom in 1 
+\i (10:39:36) setwindow pcb
+\i (10:39:36) zoom in -1377.617 366.907
+\t (10:39:36) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:36) trapsize 17586
+\i (10:39:36) zoom in 1 
+\i (10:39:36) setwindow pcb
+\i (10:39:36) zoom in -1377.616 366.907
+\i (10:39:36) trapsize 8793
+\i (10:39:36) zoom in 1 
+\i (10:39:36) setwindow pcb
+\i (10:39:36) zoom in -1377.616 366.908
+\t (10:39:36) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:39:36) trapsize 4396
+\i (10:39:36) zoom in 1 
+\i (10:39:36) setwindow pcb
+\i (10:39:36) zoom in -1377.616 366.908
+\i (10:39:36) trapsize 2198
+\i (10:39:37) zoom out 1 
+\i (10:39:37) setwindow pcb
+\i (10:39:37) zoom out -1356.073 369.107
+\i (10:39:37) trapsize 4396
+\i (10:39:37) zoom out 1 
+\i (10:39:37) setwindow pcb
+\i (10:39:37) zoom out -1350.797 367.347
+\t (10:39:37) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:37) trapsize 8793
+\i (10:39:37) zoom out 1 
+\i (10:39:37) setwindow pcb
+\i (10:39:37) zoom out -1342.004 363.831
+\i (10:39:37) trapsize 17586
+\i (10:39:37) zoom out 1 
+\i (10:39:37) setwindow pcb
+\i (10:39:37) zoom out -1334.969 360.313
+\t (10:39:37) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:39:37) trapsize 35172
+\i (10:39:38) zoom in 1 
+\i (10:39:38) setwindow pcb
+\i (10:39:38) zoom in 978.897 184.013
+\t (10:39:38) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:38) trapsize 17586
+\i (10:39:38) zoom in 1 
+\i (10:39:38) setwindow pcb
+\i (10:39:38) zoom in 1105.516 155.876
+\i (10:39:38) trapsize 8793
+\i (10:39:39) zoom in 1 
+\i (10:39:39) setwindow pcb
+\i (10:39:39) zoom in 1142.447 148.842
+\t (10:39:39) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:39:39) trapsize 4396
+\i (10:39:39) zoom out 1 
+\i (10:39:39) setwindow pcb
+\i (10:39:39) zoom out 1145.964 147.963
+\t (10:39:39) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:39) trapsize 8793
+\i (10:39:39) zoom out 1 
+\i (10:39:39) setwindow pcb
+\i (10:39:39) zoom out 1145.964 147.963
+\i (10:39:39) trapsize 17586
+\i (10:39:40) zoom out 1 
+\i (10:39:40) setwindow pcb
+\i (10:39:40) zoom out 1170.585 130.376
+\t (10:39:40) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:39:40) trapsize 35172
+\i (10:39:41) zoom in 1 
+\i (10:39:41) setwindow pcb
+\i (10:39:41) zoom in 176.979 -19.984
+\t (10:39:41) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:41) trapsize 17586
+\i (10:39:42) zoom in 1 
+\i (10:39:42) setwindow pcb
+\i (10:39:42) zoom in 176.979 -19.984
+\i (10:39:42) trapsize 8793
+\i (10:39:43) zoom out 1 
+\i (10:39:43) setwindow pcb
+\i (10:39:43) zoom out 949.002 -7.674
+\i (10:39:43) trapsize 17586
+\i (10:39:46) zoom in 1 
+\i (10:39:46) setwindow pcb
+\i (10:39:46) zoom in -992.485 -869.384
+\i (10:39:46) trapsize 8793
+\i (10:39:47) zoom in 1 
+\i (10:39:47) setwindow pcb
+\i (10:39:47) zoom in -990.726 -869.384
+\t (10:39:47) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:39:47) trapsize 4396
+\i (10:39:47) zoom out 1 
+\i (10:39:47) setwindow pcb
+\i (10:39:47) zoom out -990.726 -870.263
+\t (10:39:47) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:47) trapsize 8793
+\i (10:39:47) zoom out 1 
+\i (10:39:47) setwindow pcb
+\i (10:39:47) zoom out -987.208 -873.780
+\i (10:39:47) trapsize 17586
+\i (10:39:49) zoom out 1 
+\i (10:39:49) setwindow pcb
+\i (10:39:49) zoom out -311.910 -29.655
+\t (10:39:49) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:39:49) trapsize 35172
+\i (10:39:52) prepopup 1056.275 3194.723
+\i (10:39:53) pick grid -512.389 3208.792
+\t (10:39:53) last pick:  -512.000  3209.000
+\i (10:39:54) save 
+\i (10:39:55) fillin yes 
+\i (10:39:55) generaledit 
+\i (10:39:56) zoom out 1 
+\i (10:39:56) setwindow pcb
+\i (10:39:56) zoom out 2533.493 655.316
+\i (10:39:56) trapsize 35172
+\i (10:39:56) zoom out 1 
+\i (10:39:56) setwindow pcb
+\i (10:39:56) zoom out 2231.015 599.041
+\i (10:39:56) trapsize 35172
+\i (10:39:57) zoom in 1 
+\i (10:39:57) setwindow pcb
+\i (10:39:57) zoom in -357.633 85.532
+\t (10:39:57) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:39:57) trapsize 17586
+\i (10:39:57) zoom out 1 
+\i (10:39:57) setwindow pcb
+\i (10:39:57) zoom out -357.633 85.532
+\t (10:39:57) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:39:57) trapsize 35172
+\i (10:40:00) color192 
+\i (10:40:00) setwindow cvf.dialog
+\i (10:40:00) cvf layer_mode
+\i (10:40:00) setwindow pcb
+\i (10:40:00) generaledit 
+\i (10:40:02) setwindow cvf.dialog
+\i (10:40:02) cvf layer_tree_item 'Stack-Up'
+\i (10:40:04) cvf layers_visible stack-up stack-up/top TRUE
+\i (10:40:04) cvf layers_visible stack-up stack-up/bottom TRUE
+\i (10:40:08) cvf layer_tree_item 'Manufacturing'
+\i (10:40:10) cvf layers_visible manufacturing/autosilk_top TRUE
+\i (10:40:10) cvf layers_visible manufacturing/autosilk_bottom TRUE
+\i (10:40:11) cvf apply
+\i (10:40:12) cvf okay
+\i (10:40:13) setwindow pcb
+\i (10:40:13) zoom in 1 
+\i (10:40:13) setwindow pcb
+\i (10:40:13) zoom in -976.658 43.326
+\t (10:40:13) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:40:13) trapsize 17586
+\i (10:40:13) zoom in 1 
+\i (10:40:13) setwindow pcb
+\i (10:40:13) zoom in -906.314 25.740
+\i (10:40:13) trapsize 8793
+\i (10:40:13) zoom out 1 
+\i (10:40:13) setwindow pcb
+\i (10:40:13) zoom out -865.866 -2.397
+\i (10:40:13) trapsize 17586
+\i (10:40:14) zoom out 1 
+\i (10:40:14) setwindow pcb
+\i (10:40:14) zoom out -837.729 -118.464
+\t (10:40:14) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (10:40:14) trapsize 35172
+\i (10:40:16) zoom in 1 
+\i (10:40:16) setwindow pcb
+\i (10:40:16) zoom in -1342.445 -202.877
+\t (10:40:16) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:40:16) trapsize 17586
+\i (10:40:16) zoom in 1 
+\i (10:40:16) setwindow pcb
+\i (10:40:16) zoom in -1342.445 -202.877
+\i (10:40:16) trapsize 8793
+\i (10:40:18) zoom in 1 
+\i (10:40:18) setwindow pcb
+\i (10:40:18) zoom in -1344.203 -197.601
+\t (10:40:18) Grids are drawn 4.000, 4.000 apart for enhanced viewability.
+\i (10:40:18) trapsize 4396
+\i (10:40:18) zoom out 1 
+\i (10:40:18) setwindow pcb
+\i (10:40:18) zoom out -1344.203 -197.601
+\t (10:40:18) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (10:40:18) trapsize 8793
+\i (10:40:19) zoom out 1 
+\i (10:40:19) setwindow pcb
+\i (10:40:19) zoom out -1259.790 -195.842
+\i (10:40:19) trapsize 17586
+\i (10:40:39) artwork 
+\w (10:40:39) Artwork output type (GERBER_RS274X) does not match the format used in dynamic shapes parameters (GERBER4X00). Use Global shape parameter dialog, tab Void Controls to change format type.
+\i (10:40:44) fillin confirm
+\i (10:40:45) setwindow form.film_control
+\i (10:40:45) FORM film_control general_parameters  
+\i (10:40:48) FORM film_control film_control  
+\i (10:41:00) FORM film_control general_parameters  
+\i (10:41:04) FORM film_control film_control  
+\i (10:41:06) FORM film_control cancel  
+\i (10:41:06) setwindow pcb
+\i (10:41:06) generaledit 
+\i (10:41:08) enved 
+\i (10:41:09) generaledit 
+\i (10:41:11) setwindow form.prfedit
+\i (10:41:11) FORM prfedit cancel  
+\i (10:41:13) setwindow pcb
+\i (10:41:13) artwork 
+\w (10:41:13) Artwork output type (GERBER_RS274X) does not match the format used in dynamic shapes parameters (GERBER4X00). Use Global shape parameter dialog, tab Void Controls to change format type.
+\i (10:42:16) fillin confirm
+\i (10:42:17) setwindow form.film_control
+\i (10:42:17) FORM film_control cancel  
+\i (10:42:17) setwindow pcb
+\i (10:42:17) generaledit 
+\i (10:42:23) shape global param 
+\i (10:42:23) generaledit 
+\i (10:42:27) setwindow form.dyn_xshape
+\i (10:42:27) FORM dyn_xshape void_controls  
+\i (10:42:31) FORM dyn_xshape art_format Gerber RS274X 
+\i (10:42:35) FORM dyn_xshape apply  
+\i (10:42:37) FORM dyn_xshape done  
+\i (10:42:41) setwindow pcb
+\i (10:42:41) artwork 
+\i (10:42:48) setwindow form.film_control
+\i (10:42:48) FORM film_control general_parameters  
+\i (10:43:21) FORM film_control format_int_places 3 
+\i (10:43:21) FORM film_control film_control  
+\i (10:43:22) FORM film_control select_all  
+\i (10:43:38) FORM film_control cancel  
+\i (10:43:38) setwindow pcb
+\i (10:43:38) generaledit 
+\i (10:43:40) dbdoctor 
+\i (10:43:42) setwindow form.dbdoctor_allegro
+\i (10:43:42) FORM dbdoctor_allegro drc YES 
+\i (10:43:42) FORM dbdoctor_allegro shapes YES 
+\i (10:43:43) FORM dbdoctor_allegro execute  
+\t (10:43:43) Dbdoctor in progress - please wait.
+\t (10:43:43) Checking db records
+\t (10:43:

@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : sant1ch.brd                                   )
 (    Software Version : 16.5P003                                      )
-(    Date/Time        : Thu Aug 10 00:58:02 2017                      )
+(    Date/Time        : Sun Aug 13 00:27:53 2017                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -21,6 +21,9 @@
  ========= check standalone rectangles        0:00:00
 
  ..... Total number of DRC errors  0
+
+
+WARNING: 2 dynamic shape(s) out of date; checking skipped on these elements.
 
  ..... DRC update completed, total CPU time   0:00:00
  *************************************************************************
