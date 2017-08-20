@@ -1,0 +1,556 @@
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOGIC
+OBJECT MODULE PLACED IN logic.obj
+COMPILER INVOKED BY: F:\Program Files (x86)\Keil\C51\BIN\C51.EXE code\logic\logic.c BROWSE INCDIR(.\code\common;.\code\d
+                    -river;.\code\flash;.\code\key;.\code\led;.\code\logic;.\code\remote;.\code\sant1ch;.\code\timer) DEBUG OBJECTEXTEND PRIN
+                    -T(.\logic.lst) OBJECT(logic.obj)
+
+line level    source
+
+   1          #include <intrins.h>
+   2          #include "logic.h"
+   3          #include "N76E003.h"
+   4          #include "key.h"
+   5          #include "led.h"
+   6          #include "timer.h"
+   7          #include "key_driver.h"
+   8          #include "flash.h"
+   9          #include "remote.h"
+  10          
+  11          #define  JOGGING_TIME   (7 )
+  12          
+  13          sbit RCK = P1^7;
+  14          sbit SCK = P1^6;
+  15          sbit SER = P3^0;
+  16          
+  17          bool key_scan_flag = false;
+  18          bool update_local_flag = false;
+  19          bool syn_app_flag = false;
+  20          bool save_mode_flag = false;
+  21          bool deal_remote_flag = false;
+  22          bool remote_led_study = false;
+  23          uint8_t remote_led_blink = 0;
+  24          uint8_t update_time = 5;
+  25          
+  26          uint8_t code relay_array[4] = {0x80,0x40,0x20,0x10};
+  27          uint8_t code key_array[4] = {0x04,0x02,0x01,0x08};
+  28          
+  29          DevDef xdata dev_def = {0};
+  30          static void h595Init(void)
+  31          {
+  32   1          //初始化P16 P17 P30为推挽输出
+  33   1          P1M1 &= 0x3f;
+  34   1              P1M2 |= 0Xc0;
+  35   1              P3M1 &= 0xfe;
+  36   1          P3M2 |= 0x01;
+  37   1          SER = 1;
+  38   1      }
+  39          static void relayInit(void)
+  40          {
+  41   1          P0M1 |= 0x0f;//初始化relay脚 P00 -> P03     为输入
+  42   1              P0M2 &= 0Xf0;  
+  43   1      }
+  44          static void syncApp(void)
+  45          {
+  46   1          uint8_t last_key = h595_val;
+  47   1          uint8_t relays[4] = {0};
+  48   1          uint8_t i = 0;
+  49   1          relays[0] = RELAY1;
+  50   1          relays[1] = RELAY2;
+  51   1          relays[2] = RELAY3;
+  52   1          relays[3] = RELAY4;
+  53   1          if(dev_def.lock)
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 2   
+
+*** ERROR C204 IN LINE 53 OF code\logic\logic.c: 'lock': undefined member
+  54   1          {
+  55   2              static uint8_t lock_channel = 0;
+  56   2              static uint8_t last_lock_channel = 0;
+  57   2              static uint8_t last_relay_val[4] = {0};
+  58   2              if(dev_def.dev_channel[0].update_flag 
+  59   2                  || dev_def.dev_channel[1].update_flag 
+  60   2                  || dev_def.dev_channel[2].update_flag
+  61   2                  || dev_def.dev_channel[3].update_flag)
+  62   2              {
+  63   3                  return;
+  64   3              }
+  65   2              for(i = 0; i < 4;i++)
+  66   2              {
+  67   3                  if(relays[i] != last_relay_val[i] && relays[i] == 1)
+  68   3                  {
+  69   4                      lock_channel = i + 1;
+  70   4                  }
+  71   3                  last_relay_val[i] = relays[i];
+  72   3              }
+  73   2              if(last_lock_channel != lock_channel)
+  74   2              {
+  75   3                  last_lock_channel = lock_channel;
+  76   3                  for(i = 0; i < 4; i++)
+  77   3                  {
+  78   4                      if(lock_channel == (i + 1))
+  79   4                      {
+  80   5                          h595_val &= 0x0f;
+  81   5                          h595_val |= relay_array[i];
+  82   5                      }
+  83   4                  }
+  84   3                  dev_def.dev_channel[0].update_flag = true;
+  85   3                  dev_def.dev_channel[1].update_flag = true;
+  86   3                  dev_def.dev_channel[2].update_flag = true;
+  87   3                  dev_def.dev_channel[3].update_flag = true;
+  88   3                  dev_def.update_local_cnt = 0;
+  89   3                  dev_def.setting = false;
+  90   3                  update_time = 5;
+  91   3              }
+  92   2              else
+  93   2              {
+  94   3                  if(relays[lock_channel - 1])
+  95   3                  {
+  96   4                      if(!(h595_val & relay_array[lock_channel - 1]))
+  97   4                      {
+  98   5                          h595_val |= relay_array[lock_channel - 1];
+  99   5                          dev_def.dev_channel[0].update_flag = true;
+ 100   5                          dev_def.dev_channel[1].update_flag = true;
+ 101   5                          dev_def.dev_channel[2].update_flag = true;
+ 102   5                          dev_def.dev_channel[3].update_flag = true;
+ 103   5                          dev_def.update_local_cnt = 0;
+ 104   5                          dev_def.setting = false;
+ 105   5                          update_time = 5;
+ 106   5                      }
+ 107   4                     
+ 108   4                  }
+ 109   3                  else
+ 110   3                  {
+ 111   4                      if(h595_val & relay_array[lock_channel - 1])
+ 112   4                      {
+ 113   5                          h595_val &= ~relay_array[lock_channel - 1];
+ 114   5                          dev_def.dev_channel[0].update_flag = true;
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 3   
+
+ 115   5                          dev_def.dev_channel[1].update_flag = true;
+ 116   5                          dev_def.dev_channel[2].update_flag = true;
+ 117   5                          dev_def.dev_channel[3].update_flag = true;
+ 118   5                          dev_def.update_local_cnt = 0;
+ 119   5                          dev_def.setting = false;
+ 120   5                          update_time = 5;
+ 121   5                      }
+ 122   4                  }
+ 123   3              }
+ 124   2          }
+ 125   1          else
+ 126   1          {
+ 127   2              for(i =  0; i < 4; i++)
+ 128   2              {
+ 129   3                  if(dev_def.dev_channel[i].channel_mode == DEV_JOGGING)
+ 130   3                  {
+ 131   4                      dev_def.dev_channel[i].timer_cnt++;
+ 132   4                      if((h595_val & relay_array[i]))//如果relay1是按下的
+ 133   4                      {
+ 134   5                          if(dev_def.dev_channel[i].get_status == false)
+ 135   5                          {
+ 136   6                              dev_def.dev_channel[i].timer_cnt = 0;
+ 137   6                              dev_def.dev_channel[i].get_status = true;
+ 138   6                          }
+ 139   5                          if(dev_def.dev_channel[i].timer_cnt >= JOGGING_TIME)
+ 140   5                          {
+ 141   6                              dev_def.dev_channel[i].timer_cnt = 0;
+ 142   6                              dev_def.dev_channel[i].get_status = false;
+ 143   6                              h595_val &= (~relay_array[i]);//关掉relay1
+ 144   6                              dev_def.dev_channel[i].update_flag = true;//允许更新标志位
+ 145   6                              dev_def.update_local_cnt = 0;
+ 146   6                              dev_def.setting = false;
+ 147   6                              update_time = 5;
+ 148   6                          }
+ 149   5                      }
+ 150   4                  }
+ 151   3                  if(!dev_def.dev_channel[i].update_flag)
+ 152   3                  {
+ 153   4                      if(relays[i])
+ 154   4                      {
+ 155   5                          h595_val |= relay_array[i];
+ 156   5                      }
+ 157   4                      else
+ 158   4                      {
+ 159   5                          h595_val &= (~relay_array[i]);
+ 160   5                      }
+ 161   4                  }
+ 162   3              }
+ 163   2          }
+ 164   1          if(h595_val != last_key)
+ 165   1          {
+ 166   2              SendTo595(h595_val);
+ 167   2          }
+ 168   1      }
+ 169          static void updateLocal(void)
+ 170          {
+ 171   1          static bool high_flag[4] = {false};
+ 172   1          uint8_t i = 0;
+ 173   1          uint8_t last_key = h595_val;
+ 174   1          uint8_t relays[4] = {0};
+ 175   1          dev_def.update_local_cnt++;
+ 176   1          if(dev_def.update_local_cnt == update_time)
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 4   
+
+ 177   1          {
+ 178   2              relays[0] = (uint8_t)RELAY1;
+ 179   2              relays[1] = (uint8_t)RELAY2;
+ 180   2              relays[2] = (uint8_t)RELAY3;
+ 181   2              relays[3] = (uint8_t)RELAY4;
+ 182   2              for(i = 0; i < 4; i++)
+ 183   2              {
+ 184   3                  if(dev_def.dev_channel[i].update_flag)
+ 185   3                  {
+ 186   4                      if((relays[i] << (7 - i)) != (h595_val & relay_array[i]))
+ 187   4                      {
+ 188   5                          high_flag[i] = true;
+ 189   5                          h595_val &= ~key_array[i];
+ 190   5                      }
+ 191   4                      else
+ 192   4                      {
+ 193   5                          dev_def.dev_channel[i].update_flag = false;
+ 194   5                      }
+ 195   4                  }
+ 196   3              }
+ 197   2              if(h595_val != last_key)
+ 198   2              {
+ 199   3                  SendTo595(h595_val);
+ 200   3              }
+ 201   2          }
+ 202   1          else if(dev_def.update_local_cnt >= update_time + 1)
+ 203   1          {
+ 204   2              dev_def.update_local_cnt = 0;
+ 205   2              for(i = 0; i < 4; i++)
+ 206   2              {
+ 207   3                  if(high_flag[i] == true)
+ 208   3                  {
+ 209   4                      h595_val |= key_array[i];
+ 210   4                      high_flag[i] = false;
+ 211   4                  }
+ 212   3              }
+ 213   2              if(h595_val != last_key)
+ 214   2              {
+ 215   3                  SendTo595(h595_val);
+ 216   3              }
+ 217   2          }
+ 218   1      
+ 219   1          
+ 220   1      }
+ 221          void dealLogic(void)
+ 222          {
+ 223   1          if(key_scan_flag)
+ 224   1          {
+ 225   2              key_scan_flag = false;
+ 226   2              keyScan();
+ 227   2          }
+ 228   1          if(syn_app_flag)
+ 229   1          {
+ 230   2              syn_app_flag = false;
+ 231   2              syncApp();
+ 232   2          }
+ 233   1          if(update_local_flag)
+ 234   1          {
+ 235   2              update_local_flag = false;
+ 236   2              updateLocal();//要在同步APP之后
+ 237   2          }
+ 238   1      }
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 5   
+
+ 239          void saveModeToFlash(void)
+ 240          {
+ 241   1          if(save_mode_flag)
+ 242   1          {
+ 243   2                      flash_data[0] = dev_def.lock;
+*** ERROR C204 IN LINE 243 OF code\logic\logic.c: 'lock': undefined member
+ 244   2                      flash_data[1] = (uint8_t)dev_def.dev_channel[0].channel_mode;
+ 245   2                      flash_data[2] = (uint8_t)dev_def.dev_channel[1].channel_mode;
+ 246   2                      flash_data[3] = (uint8_t)dev_def.dev_channel[2].channel_mode;
+ 247   2                      flash_data[4] = (uint8_t)dev_def.dev_channel[3].channel_mode;
+ 248   2                      flash_data[5] = (uint8_t)(dev_def.dev_channel[0].remote_val >> 16);
+ 249   2                      flash_data[6] = (uint8_t)(dev_def.dev_channel[0].remote_val >> 8);
+ 250   2                      flash_data[7] = (uint8_t)dev_def.dev_channel[0].remote_val;
+ 251   2                      flash_data[8] = (uint8_t)(dev_def.dev_channel[1].remote_val >> 16);
+ 252   2                      flash_data[9] = (uint8_t)(dev_def.dev_channel[1].remote_val >> 8);
+ 253   2                      flash_data[10] = (uint8_t)dev_def.dev_channel[1].remote_val;
+ 254   2                      flash_data[11] = (uint8_t)(dev_def.dev_channel[2].remote_val >> 16);
+ 255   2                      flash_data[12] = (uint8_t)(dev_def.dev_channel[2].remote_val >> 8);
+ 256   2                      flash_data[13] = (uint8_t)dev_def.dev_channel[2].remote_val;
+ 257   2                      flash_data[14] = (uint8_t)(dev_def.dev_channel[3].remote_val >> 16);
+ 258   2                      flash_data[15] = (uint8_t)(dev_def.dev_channel[3].remote_val >> 8);
+ 259   2                      flash_data[16] = (uint8_t)dev_def.dev_channel[3].remote_val;
+ 260   2                      flashWrite();
+ 261   2                      save_mode_flag = false;
+ 262   2          }
+ 263   1      }
+ 264          static void dealRemoteModeLed(void)
+ 265          {
+ 266   1          static uint8_t remote_led_cnt = 0;
+ 267   1          remote_led_cnt++;
+ 268   1          if(dev_def.remote)
+ 269   1              {
+ 270   2              if(remote_led_cnt >= 100)
+ 271   2              {
+ 272   3                  remote_led_cnt = 0;
+ 273   3                  MODE_LED = !MODE_LED;
+*** ERROR C202 IN LINE 273 OF code\logic\logic.c: 'MODE_LED': undefined identifier
+ 274   3              }
+ 275   2              }
+ 276   1              else
+ 277   1              {
+ 278   2              if(dev_def.lock)
+*** ERROR C204 IN LINE 278 OF code\logic\logic.c: 'lock': undefined member
+ 279   2              {
+ 280   3                  MODE_LED = 1;
+*** ERROR C202 IN LINE 280 OF code\logic\logic.c: 'MODE_LED': undefined identifier
+ 281   3              }
+ 282   2              else
+ 283   2              {
+ 284   3                  MODE_LED = 0;
+*** ERROR C202 IN LINE 284 OF code\logic\logic.c: 'MODE_LED': undefined identifier
+ 285   3              }
+ 286   2              }
+ 287   1      }
+ 288          void dealRemoteStudyLed(void)
+ 289          {
+ 290   1          static uint8_t cnt = 0;
+ 291   1          cnt++;
+ 292   1          if(cnt >= 100 && remote_led_study)
+ 293   1          {
+ 294   2              cnt = 0;
+ 295   2              if(RF_LED)
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 6   
+
+ 296   2              {
+ 297   3                  RF_LED = 0;
+ 298   3                  remote_led_blink++;
+ 299   3              }
+ 300   2              else
+ 301   2              {
+ 302   3                  RF_LED = 1;
+ 303   3              }
+ 304   2          }
+ 305   1          if((remote_led_blink >= 4) && remote_led_study)
+ 306   1          {
+ 307   2              RF_LED = 0;
+ 308   2              remote_led_blink = 0;
+ 309   2              remote_led_study = false;
+ 310   2          }
+ 311   1      }
+ 312          void dealRemoteNormalLed(void)
+ 313          {
+ 314   1          static uint8_t cnt = 0;
+ 315   1          cnt++;
+ 316   1          if(!dev_def.remote 
+ 317   1          && (ir_data.ir_data == dev_def.dev_channel[1].remote_val
+ 318   1          || ir_data.ir_data == dev_def.dev_channel[0].remote_val
+ 319   1          || ir_data.ir_data == dev_def.dev_channel[2].remote_val
+ 320   1          || ir_data.ir_data == dev_def.dev_channel[3].remote_val)
+ 321   1          )
+ 322   1          {
+ 323   2              if(ir_data.cnt > 0 && cnt >= 15)
+ 324   2              {
+ 325   3                  cnt = 0;
+ 326   3                  RF_LED = !RF_LED;
+ 327   3              }
+ 328   2              if(ir_data.timer_cnt >= 100)
+ 329   2              {
+ 330   3                  RF_LED = 0;
+ 331   3              }
+ 332   2          }
+ 333   1      }
+ 334          void dealRemoteLed(void)
+ 335          {
+ 336   1          dealRemoteModeLed();
+ 337   1              dealRemoteStudyLed();
+ 338   1              dealRemoteNormalLed();
+ 339   1      }
+ 340          void dealRemoteStudy(void)
+ 341          {
+ 342   1          if(dev_def.remote_channel != 0 && dev_def.remote)
+ 343   1          {
+ 344   2              if(ir_data.cnt == 10)
+ 345   2              {
+ 346   3                  remote_led_study = true;
+ 347   3                  remote_led_blink = 0;
+ 348   3                  RF_LED = 0;
+ 349   3              }
+ 350   2              if(ir_data.cnt >= 10 && ir_data.timer_cnt >= 150)
+ 351   2              {
+ 352   3                  //ir_data.cnt = 0;
+ 353   3                  dev_def.dev_channel[dev_def.remote_channel - 1].remote_val = ir_data.ir_data;
+ 354   3                  clearIrData();
+ 355   3                  dev_def.remote_channel = 0;
+ 356   3              }
+ 357   2          }
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 7   
+
+ 358   1      }
+ 359          void dealRemoteNormal(void)
+ 360          {
+ 361   1          static uint16_t cnt = 0;
+ 362   1          uint8_t i = 0;
+ 363   1              uint8_t relays[4] = {0};
+ 364   1          cnt++;
+ 365   1          if(!dev_def.remote)
+ 366   1          {
+ 367   2              relays[0] = RELAY1;
+ 368   2              relays[1] = RELAY2;
+ 369   2              relays[2] = RELAY3;
+ 370   2              relays[3] = RELAY4;
+ 371   2              if(ir_data.cnt == 1)
+ 372   2              {
+ 373   3                  for(i = 0; i < 4; i++)
+ 374   3                  {
+ 375   4                      if(ir_data.ir_data == dev_def.dev_channel[i].remote_val)
+ 376   4                      {
+ 377   5                          h595_val |= 0x0f;
+ 378   5                          h595_val &= (~key_array[i]);
+ 379   5                          dev_def.remote_channel = i + 1;
+ 380   5                          SendTo595(h595_val);   
+ 381   5                          cnt = 0;
+ 382   5                      }
+ 383   4                  }
+ 384   3              }
+ 385   2              if(ir_data.timer_cnt >= 150 && ir_data.cnt >= 1
+ 386   2              && ir_data.ir_data == dev_def.dev_channel[dev_def.remote_channel - 1].remote_val)
+ 387   2              {
+ 388   3                  h595_val |= 0x0f;
+ 389   3                  if(cnt <= 2500)
+ 390   3                  {
+ 391   4                      if(relays[dev_def.remote_channel - 1])
+ 392   4                      {
+ 393   5                          h595_val &= (~relay_array[dev_def.remote_channel - 1]);    
+ 394   5                      }
+ 395   4                      else
+ 396   4                      {
+ 397   5                          if(dev_def.lock)
+*** ERROR C204 IN LINE 397 OF code\logic\logic.c: 'lock': undefined member
+ 398   5                          {
+ 399   6                              h595_val &= 0x0f;
+ 400   6                          }
+ 401   5                          h595_val |= relay_array[dev_def.remote_channel - 1] ;
+ 402   5                      }
+ 403   4                      dev_def.remote_channel = 0;
+ 404   4                      dev_def.dev_channel[0].update_flag = true;
+ 405   4                      dev_def.dev_channel[1].update_flag = true;
+ 406   4                      dev_def.dev_channel[2].update_flag = true;
+ 407   4                      dev_def.dev_channel[3].update_flag = true;
+ 408   4                      dev_def.update_local_cnt = 0;
+ 409   4                      update_time = 10;
+ 410   4                  }
+ 411   3                  SendTo595(h595_val);
+ 412   3                  clearIrData();
+ 413   3              }
+ 414   2          }
+ 415   1      }
+ 416          void dealRemote(void)
+ 417          {
+ 418   1              if(deal_remote_flag)
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 8   
+
+ 419   1              {
+ 420   2                      deal_remote_flag = false;
+ 421   2                      analyzeRfData();
+ 422   2                      dealRemoteLed();
+ 423   2                      dealRemoteStudy();
+ 424   2                      dealRemoteNormal();
+ 425   2              }
+ 426   1      }
+ 427          static void modeInit(void)
+ 428          {
+ 429   1              flashRead();
+ 430   1              dev_def.lock = flash_data[0];
+*** ERROR C204 IN LINE 430 OF code\logic\logic.c: 'lock': undefined member
+ 431   1              dev_def.dev_channel[0].channel_mode = flash_data[1];
+ 432   1              dev_def.dev_channel[1].channel_mode = flash_data[2];
+ 433   1              dev_def.dev_channel[2].channel_mode = flash_data[3];
+ 434   1              dev_def.dev_channel[3].channel_mode = flash_data[4];
+ 435   1              dev_def.dev_channel[0].remote_val = 
+ 436   1                      (uint32_t)flash_data[5] << 16
+ 437   1                      | (uint32_t)flash_data[6] << 8 
+ 438   1                      | flash_data[7];
+ 439   1          dev_def.dev_channel[1].remote_val = 
+ 440   1                  (uint32_t)flash_data[8] << 16 
+ 441   1                  | (uint32_t)flash_data[9] << 8 
+ 442   1                  | flash_data[10];
+ 443   1          dev_def.dev_channel[2].remote_val = 
+ 444   1                  (uint32_t)flash_data[11] << 16 
+ 445   1                  | (uint32_t)flash_data[12] << 8 
+ 446   1                  | flash_data[13];
+ 447   1          dev_def.dev_channel[3].remote_val = 
+ 448   1                  (uint32_t)flash_data[14] << 16 
+ 449   1                  | (uint32_t)flash_data[15] << 8 
+ 450   1                  | flash_data[16];
+ 451   1          if(dev_def.lock == 0xff 
+*** ERROR C204 IN LINE 451 OF code\logic\logic.c: 'lock': undefined member
+ 452   1              || dev_def.dev_channel[0].channel_mode == 0xff
+ 453   1              || dev_def.dev_channel[1].channel_mode == 0xff
+ 454   1              || dev_def.dev_channel[2].channel_mode == 0xff
+ 455   1              || dev_def.dev_channel[3].channel_mode == 0xff
+ 456   1              || dev_def.dev_channel[0].remote_val == 0xffffff
+ 457   1              || dev_def.dev_channel[1].remote_val == 0xffffff
+ 458   1              || dev_def.dev_channel[2].remote_val == 0xffffff
+ 459   1              || dev_def.dev_channel[3].remote_val == 0xffffff)
+ 460   1          {
+ 461   2              dev_def.lock = false;
+*** ERROR C204 IN LINE 461 OF code\logic\logic.c: 'lock': undefined member
+ 462   2              dev_def.dev_channel[0].channel_mode = DEV_SELFLOCK;
+ 463   2              dev_def.dev_channel[1].channel_mode = DEV_SELFLOCK;
+ 464   2              dev_def.dev_channel[2].channel_mode = DEV_SELFLOCK;
+ 465   2              dev_def.dev_channel[3].channel_mode = DEV_SELFLOCK;
+ 466   2              dev_def.dev_channel[0].remote_val = 0x0;
+ 467   2              dev_def.dev_channel[1].remote_val = 0x0;
+ 468   2              dev_def.dev_channel[2].remote_val = 0x0;
+ 469   2              dev_def.dev_channel[3].remote_val = 0x0;
+ 470   2          }
+ 471   1          if(dev_def.lock)
+*** ERROR C204 IN LINE 471 OF code\logic\logic.c: 'lock': undefined member
+ 472   1          {
+ 473   2              MODE_LED = 1;
+*** ERROR C202 IN LINE 473 OF code\logic\logic.c: 'MODE_LED': undefined identifier
+ 474   2          }
+ 475   1          else
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/19/2017 17:16:41 PAGE 9   
+
+ 476   1          {
+ 477   2              MODE_LED = 0;
+*** ERROR C202 IN LINE 477 OF code\logic\logic.c: 'MODE_LED': undefined identifier
+ 478   2          }
+ 479   1      }
+ 480          void logicInit(void)
+ 481          {
+ 482   1          modeInit();
+ 483   1          h595Init();
+ 484   1          SendTo595(0x0f);
+ 485   1          ledInit();   
+ 486   1              keyInit();
+ 487   1          relayInit();
+ 488   1      #if 1
+ 489   1              captureInit();
+ 490   1              timer1Init();
+ 491   1      #endif
+ 492   1          timer0Init();
+ 493   1      }
+ 494          void SendTo595(uint8_t val)
+ 495          {
+ 496   1              char i=0;
+ 497   1              uint8_t temp = val;
+ 498   1              EA = 0;
+ 499   1              for(i = 0; i < 8; i++)
+ 500   1              {
+ 501   2                      SER = temp>>7;
+ 502   2                      temp= temp<<1;
+ 503   2                      SCK = 0;
+ 504   2                      _nop_();
+ 505   2                      SCK = 1;
+ 506   2              }
+ 507   1              RCK = 0;
+ 508   1              _nop_();
+ 509   1              RCK = 1;
+ 510   1              SER = 0;
+ 511   1              EA = 1;
+ 512   1      }
+ 513          
+ 514          
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  13 ERROR(S)

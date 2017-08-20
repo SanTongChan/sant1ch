@@ -1,0 +1,101 @@
+C51 COMPILER V9.52.0.0   FLASH                                                             08/19/2017 17:16:41 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE FLASH
+OBJECT MODULE PLACED IN flash.obj
+COMPILER INVOKED BY: F:\Program Files (x86)\Keil\C51\BIN\C51.EXE code\flash\flash.c BROWSE INCDIR(.\code\common;.\code\d
+                    -river;.\code\flash;.\code\key;.\code\led;.\code\logic;.\code\remote;.\code\sant1ch;.\code\timer) DEBUG OBJECTEXTEND PRIN
+                    -T(.\flash.lst) OBJECT(flash.obj)
+
+line level    source
+
+   1          #include "flash.h"
+   2          #include <stdio.h>
+   3          #include "N76E003.h"
+   4          #include "typedef.h"
+   5          
+   6          #define PAGE_ERASE_AP  (0X22)
+   7          #define BYTE_PROGRAM_AP (0x21)
+   8          uint8_t xdata flash_data[FLASH_MAX_LEN] = {0xff};
+   9          
+  10          static void flashEnableAprom(void)
+  11          {
+  12   1              TA = 0xAA; //CHPCON is TA protected
+  13   1              TA = 0x55;
+  14   1              CHPCON |= 0x01; //IAPEN = 1, enable IAP mode
+  15   1              TA = 0xAA; //IAPUEN is TA protected
+  16   1              TA = 0x55;
+  17   1              IAPUEN |= 0x01; //APUEN = 1, enable APROM update
+  18   1      }
+  19          
+  20          
+  21          static void flashErase(void)
+  22          {
+  23   1              IAPCN = PAGE_ERASE_AP; //Erase page 
+  24   1              IAPAH = FLASH_START_ADDR_H;
+  25   1              IAPAL = FLASH_START_ADDR_L;
+  26   1              IAPFD = 0xFF;
+  27   1              TA = 0xAA; //IAPTRG is TA protected
+  28   1              TA = 0x55;
+  29   1              IAPTRG |= 0x01; //write ¡®1¡¯ to IAPGO to trigger IAP process
+  30   1      }
+  31          
+  32          static void flashDisableAprom(void)
+  33          {
+  34   1              TA = 0xAA; //IAPUEN is TA protected
+  35   1              TA = 0x55;
+  36   1              IAPUEN &= ~0x01; //APUEN = 0, disable APROM update
+  37   1              TA = 0xAA; //CHPCON is TA protected
+  38   1              TA = 0x55;
+  39   1              CHPCON &= ~0x01; //IAPEN = 0, disable IAP mode  
+  40   1      }
+  41          
+  42          static void flashWriteBytes(void)
+  43          {
+  44   1              uint8_t i = 0;  
+  45   1              for(i = 0; i < FLASH_MAX_LEN; i++)
+  46   1              {
+  47   2                      IAPCN = BYTE_PROGRAM_AP;
+  48   2                      IAPAH = FLASH_START_ADDR_H;
+  49   2                      IAPAL = FLASH_START_ADDR_L + i;
+  50   2                      IAPFD = flash_data[i];
+  51   2                      TA = 0XAA;
+  52   2                      TA = 0X55;
+  53   2                      IAPTRG |= 0X01;
+C51 COMPILER V9.52.0.0   FLASH                                                             08/19/2017 17:16:41 PAGE 2   
+
+  54   2              }       
+  55   1      }
+  56          void flashRead(void)
+  57          {
+  58   1              unsigned char i = 0;
+  59   1              for(i = 0; i < FLASH_MAX_LEN; i++)
+  60   1              {
+  61   2                      flash_data[i] = *(uint16_t code *)(FLASH_START_ADDR_BASE + i)>>8;
+  62   2              }               
+  63   1      }
+  64          
+  65          
+  66          void flashWrite(void)
+  67          {
+  68   1              flashEnableAprom();
+  69   1              flashErase();
+  70   1              flashWriteBytes();
+  71   1              flashDisableAprom();    
+  72   1      }
+  73          
+  74          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    142    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =     20    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

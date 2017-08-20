@@ -1,0 +1,34 @@
+sant_1ch  Revised: Friday, August 18, 2017
+          Revision: V1.0
+
+
+
+
+
+
+
+Bill Of Materials         August 18,2017      1:29:33	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	3	C1,C3,C4	10UF/25V/0603
+2	3	C2,C5,C6	100NF/50V/0603
+3	1	C7	10UF/250V/0603
+4	3	D1,D3,D4	LED
+5	1	D2	1N4148
+6	4	R1,R2,R4,R11	10k/J/0603
+7	8	R3,R5,R6,R7,R8,R9,R10,R12	1k/J/0603
+8	2	SW1,SW2	SW PUSHBUTTON
+9	1	U1	MICRO
+10	1	U2	4P
+11	1	U3	2P
+12	1	U4	AC-DC5V
+13	1	U5	PSFB04
+14	1	U6	AMS1117
+15	1	U7	N76E003
+16	1	U8	SL-5V-RELAY
+17	1	U9	3P
+18	1	U10	2n7002
+19	1	U11	5P-1
+20	1	U12	433MODULE
