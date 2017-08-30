@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LED                                                               08/30/2017 23:09:24 PAGE 1   
+C51 COMPILER V9.52.0.0   LED                                                               08/31/2017 00:44:39 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LED
@@ -11,23 +11,113 @@ line level    source
 
    1          #include "led.h"
    2          
-   3          void ledInit(void)
-   4          {
-   5   1          P0M1 &= 0xDf;
-   6   1              P0M2 |= 0X20; 
-   7   1              RF_LED = 0;
-   8   1      }
-   9          
-  10          
-  11          
+   3          LedDef led_def = {0};
+   4          
+   5          void ledInit(void)
+   6          {
+   7   1          P0M1 &= 0xDf;
+   8   1              P0M2 |= 0X20; 
+   9   1              RF_LED = 0;
+  10   1      }
+  11          void ledScan(void)
+  12          {
+  13   1              if(led_def.led_status == LED_BLINK)
+  14   1              {
+  15   2                      led_def.cnt++;
+  16   2                      if(led_def.cnt >= led_def.led_blink_cnt)
+  17   2                      {
+  18   3                              if(RF_LED == 1)
+  19   3                              {
+  20   4                                      led_def.led_blink_cnt = led_def.led_off_cnt;
+  21   4                                      if(led_def.blink_off_stop)
+  22   4                                      {
+  23   5                                              led_def.blink_off_cnt++;
+  24   5                                      }
+  25   4                              }
+  26   3                              else
+  27   3                              {
+  28   4                                      led_def.led_blink_cnt = led_def.led_on_cnt;
+  29   4                                      if(led_def.blink_on_stop)
+  30   4                                      {
+  31   5                                              led_def.blink_on_cnt++;
+  32   5                                      }
+  33   4                              }
+  34   3                              RF_LED = !RF_LED;
+  35   3                              led_def.cnt = 0;
+  36   3                              if(led_def.blink_off_stop && led_def.blink_off_cnt >= led_def.led_blink_off_cnt)
+  37   3                              {
+  38   4                                      led_def.led_status = LED_OFF;
+  39   4                              }
+  40   3                              if(led_def.blink_on_stop && led_def.blink_on_cnt >= led_def.led_blink_on_cnt)
+  41   3                              {
+  42   4                                      led_def.led_status = LED_ON;
+  43   4                              }
+  44   3                      }
+  45   2              }
+  46   1      }
+  47          
+  48          void RfLedBlink(uint16_t blink_on_cnt,uint16_t blink_off_cnt)
+  49          {
+  50   1              led_def.led_status = LED_BLINK;
+  51   1              led_def.led_on_cnt = blink_on_cnt;
+  52   1              led_def.led_off_cnt = blink_off_cnt;
+  53   1              led_def.led_blink_on_cnt = 0;
+C51 COMPILER V9.52.0.0   LED                                                               08/31/2017 00:44:39 PAGE 2   
+
+  54   1              led_def.led_blink_off_cnt = 0;  
+  55   1              led_def.blink_on_cnt = 0;
+  56   1              led_def.blink_off_cnt = 0;
+  57   1              led_def.blink_on_stop = 0;
+  58   1              led_def.blink_off_stop = 0;
+  59   1      }
+  60          void RfLedOnXt(uint16_t blink_on_cnt,uint16_t blink_off_cnt,uint8_t time)
+  61          {
+  62   1              led_def.led_status = LED_BLINK;
+  63   1              led_def.led_on_cnt = blink_on_cnt;
+  64   1              led_def.led_off_cnt = blink_off_cnt;
+  65   1              led_def.led_blink_on_cnt = time;
+  66   1              led_def.led_blink_off_cnt = 0;  
+  67   1              led_def.blink_on_cnt = 0;
+  68   1              led_def.blink_off_cnt = 0;
+  69   1              led_def.blink_on_stop = 1;
+  70   1              led_def.blink_off_stop = 0;
+  71   1      }
+  72          void RfLedOffXt(uint16_t blink_on_cnt,uint16_t blink_off_cnt,uint8_t time)
+  73          {
+  74   1              led_def.led_status = LED_BLINK;
+  75   1              led_def.led_on_cnt = blink_on_cnt;
+  76   1              led_def.led_off_cnt = blink_off_cnt;
+  77   1              led_def.led_blink_on_cnt = 0;
+  78   1              led_def.led_blink_off_cnt = time;       
+  79   1              led_def.blink_on_cnt = 0;
+  80   1              led_def.blink_off_cnt = 0;
+  81   1              led_def.blink_on_stop = 0;
+  82   1              led_def.blink_off_stop = 1;
+  83   1      }
+  84          void RfLedOn(void)
+  85          {
+  86   1              RF_LED = 1;
+  87   1              led_def.led_status = LED_ON;
+  88   1      }
+  89          
+  90          void RfLedOff(void)
+  91          {
+  92   1              RF_LED = 0;
+  93   1              led_def.led_status = LED_OFF;
+  94   1      }
+  95          void setLedProc(LedProc led_proc)
+  96          {
+  97   1              led_def.led_proc = led_proc;
+  98   1      }
+  99          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =      9    ----
+   CODE SIZE        =    193    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----    ----
+   DATA SIZE        =     18    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

@@ -48,6 +48,11 @@ void Timer0_ISR(void) interrupt 1
         key_cnt = 0;
         key_scan_flag = true;
     }
+	if(led_cnt >= 100)
+	{
+		led_cnt = 0;
+		led_flag = true;
+	}
     if(syn_app_cnt >= 1000)
     {
         syn_app_cnt = 0;

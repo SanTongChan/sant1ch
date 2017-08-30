@@ -20,6 +20,8 @@ typedef struct
 	uint32_t remote_val;
 	uint8_t lock;
 	bool update_flag;
+	uint16_t jogging_time;
+	DevMode last_dev_mode;
 }DevDef;
 
 extern xdata DevDef dev_def;
@@ -27,6 +29,9 @@ extern bool deal_remote_flag;
 extern bool key_scan_flag;
 extern bool update_local_flag;
 extern bool syn_app_flag;
+extern bool led_flag;
 void logicInit(void);
 void dealLogic(void);
+void incJoggingTime(void);
+void decJoggingTime(void);
 #endif

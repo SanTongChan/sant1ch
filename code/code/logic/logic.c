@@ -9,47 +9,54 @@
 #include "remote.h"
 
 DevDef xdata dev_def = {0};
-static uint16_t jogging_time = 700;
 bool deal_remote_flag = false;
 bool key_scan_flag = false;
 bool update_local_flag = false;
 bool syn_app_flag = false;
+bool led_flag = false;
 
 #define  JOGGING_TIME   (7)
 
 void incJoggingTime(void)
 {
-	if(jogging_time == 700)
+	if(dev_def.jogging_time == 7)
 	{
-		jogging_time = 1000;
+		dev_def.jogging_time = 100;
 	}
-	else if(jogging_time == 60000)
+	else if(dev_def.jogging_time == 600)
 	{
-		jogging_time = 60000;
+		dev_def.jogging_time = 600;
+		return;
 	}
 	else
 	{
-		jogging_time += 1000;
+		dev_def.jogging_time += 100;
 	}
+	RfLedOnXt(10,10,1);
 }
 void decJoggingTime(void)
 {
-	if(jogging_time == 700)
+	if(dev_def.jogging_time == 7)
 	{
-		jogging_time = 700;
+		dev_def.jogging_time = 7;
+		return;
 	}
-	else if(jogging_time == 1000)
+	else if(dev_def.jogging_time == 100)
 	{
-		jogging_time = 700;
+		dev_def.jogging_time = 7;
 	}
 	else
 	{
-		jogging_time -= 1000;
+		dev_def.jogging_time -= 100;
 	}
+	RfLedOnXt(10,10,1);
 }
 static void modeInit(void)
 {
 	dev_def.dev_mode = DEV_SELFLOCK;
+	dev_def.last_dev_mode = DEV_SELFLOCK;
+	dev_def.jogging_time = 7;
+	RfLedOff();
 }
 static void relayInit(void)
 {
@@ -69,7 +76,7 @@ static void syncApp(void)
 				flag = true;
 				dev_def.timer_cnt = 0;
 			}
-			if(dev_def.timer_cnt >= JOGGING_TIME)
+			if(dev_def.timer_cnt >= dev_def.jogging_time)
 			{
 				dev_def.timer_cnt = 0;
 				flag = false;
@@ -125,6 +132,11 @@ void dealLogic(void)
         update_local_flag = false;
         updateLocal();//要在同步APP之后
     }
+	if(led_flag)
+	{
+		led_flag = false;
+		ledScan();
+	}
 }
 void logicInit(void)
 {
@@ -132,6 +144,7 @@ void logicInit(void)
 	ledInit();
 	keyInit();
 	relayInit();
+	RfLedOffXt(50,50,5);
 #if 0
 	captureInit();
 	timer1Init();

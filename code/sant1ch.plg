@@ -643,3 +643,586 @@ Load "E:\\workDir\\san1ch\\code\\sant1ch"
 Flash Erase Done.
 Flash Write Done: 4455 bytes programmed.
 Flash Verify Done: 4455 bytes verified.
+compiling logic.c...
+code\logic\logic.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+compiling key.c...
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INCJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=58.0 xdata=204 code=4446
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 8 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?INCJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=58.0 xdata=204 code=4446
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 8 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4446 bytes programmed.
+Flash Verify Done: 4446 bytes verified.
+compiling logic.c...
+code\logic\logic.c - 0 Error(s), 0 Warning(s).
+compiling key.c...
+code\key\key.c - 0 Error(s), 0 Warning(s).
+compiling key.c...
+code\key\key.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=58.0 xdata=205 code=4529
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 6 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=58.0 xdata=205 code=4529
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 6 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4529 bytes programmed.
+Flash Verify Done: 4529 bytes verified.
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=58.0 xdata=205 code=4529
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 6 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4529 bytes programmed.
+Flash Verify Done: 4529 bytes verified.
+compiling led.c...
+code\led\led.h(13): error C100: unprintable character 0xA3 skipped
+code\led\led.h(13): error C100: unprintable character 0xAC skipped
+code\led\led.h(14): error C141: syntax error near 'LED_ON'
+code\led\led.h(14): error C244: 'LED_ON': can't initialize, bad type or class
+code\led\led.h(14): error C100: unprintable character 0xA3 skipped
+code\led\led.h(14): error C100: unprintable character 0xAC skipped
+code\led\led.h(15): error C141: syntax error near 'LED_BLINK'
+code\led\led.h(15): error C244: 'LED_BLINK': can't initialize, bad type or class
+code\led\led.h(15): error C100: unprintable character 0xA3 skipped
+code\led\led.h(15): error C100: unprintable character 0xAC skipped
+code\led\led.h(16): error C141: syntax error near '}'
+code\led\led.h(20): error C141: syntax error near 'uint16_t'
+code\led\led.h(20): error C129: missing ';' before 'led_on_cnt'
+code\led\led.c - 13 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.h(20): error C141: syntax error near 'uint16_t'
+code\led\led.h(20): error C129: missing ';' before 'led_on_cnt'
+code\led\led.c - 2 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.h(21): error C141: syntax error near 'uint16_t'
+code\led\led.h(21): error C129: missing ';' before 'led_on_cnt'
+code\led\led.c - 2 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.h(21): error C141: syntax error near 'uint16_t'
+code\led\led.h(21): error C129: missing ';' before 'led_on_cnt'
+code\led\led.c - 2 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.h(21): error C141: syntax error near 'uint16_t'
+code\led\led.h(21): error C129: missing ';' before 'led_on_cnt'
+code\led\led.c - 2 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+code\key\key.c(82): error C141: syntax error near '.'
+compiling remote.c...
+Target not created
+compiling key.c...
+code\key\key.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?LEDSCAN?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=73.0 xdata=205 code=4707
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 13 Warning(s).
+compiling logic.c...
+code\logic\logic.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+compiling key.c...
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4740
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 12 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4740
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 12 Warning(s).
+compiling logic.c...
+code\logic\logic.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4751
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 11 Warning(s).
+Build target 'sant1ch'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4751
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 11 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4751
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 11 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4751 bytes programmed.
+Flash Verify Done: 4751 bytes verified.
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDOFFXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4753
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 11 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4753 bytes programmed.
+Flash Verify Done: 4753 bytes verified.
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4753 bytes programmed.
+Flash Verify Done: 4753 bytes verified.
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DECJOGGINGTIME?LOGIC
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDONXT?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDOFF?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=74.0 xdata=205 code=4753
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 11 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4753 bytes programmed.
+Flash Verify Done: 4753 bytes verified.
+compiling led.c...
+code\led\led.c(97): error C200: left side of '.' requires struct/union
+code\led\led.c - 1 Error(s), 0 Warning(s).
+compiling led.c...
+code\led\led.c - 0 Error(s), 0 Warning(s).
+compiling key.c...
+code\key\key.c - 0 Error(s), 0 Warning(s).
+Build target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SETLEDPROC?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=77.0 xdata=205 code=4825
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 9 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SETLEDPROC?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=77.0 xdata=205 code=4825
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 9 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4825 bytes programmed.
+Flash Verify Done: 4825 bytes verified.
+compiling key.c...
+code\key\key.c - 0 Error(s), 0 Warning(s).
+Rebuild target 'sant1ch'
+compiling timer.c...
+compiling logic.c...
+compiling key.c...
+assembling STARTUP.A51...
+compiling main.c...
+compiling key_driver.c...
+compiling led.c...
+compiling flash.c...
+compiling remote.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?TIMER1INIT?TIMER
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_RFLEDBLINK?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?RFLEDON?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_SETLEDPROC?LED
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHREAD?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?FLASHWRITE?FLASH
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CLEARIRDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?ANALYZERFDATA?REMOTE
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?CAPTUREINIT?REMOTE
+Program Size: data=77.0 xdata=205 code=4834
+creating hex file from "sant1ch"...
+"sant1ch" - 0 Error(s), 9 Warning(s).
+Load "E:\\workDir\\san1ch\\code\\sant1ch" 
+Flash Erase Done.
+Flash Write Done: 4834 bytes programmed.
+Flash Verify Done: 4834 bytes verified.
