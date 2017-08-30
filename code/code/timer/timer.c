@@ -38,8 +38,6 @@ void Timer0_ISR(void) interrupt 1
     static uint16_t key_cnt = 0;
     static uint16_t update_local_cnt = 0;
     static uint16_t syn_app_cnt = 0;
-    static uint16_t update_threod = 0;
-    static uint16_t syn_threod = 0;
     static uint16_t led_cnt = 0;
     key_cnt++;
     update_local_cnt++;
@@ -50,17 +48,15 @@ void Timer0_ISR(void) interrupt 1
         key_cnt = 0;
         key_scan_flag = true;
     }
-    if(update_local_cnt >= 10000 - update_threod)
+    if(syn_app_cnt >= 1000)
     {
-        update_threod = 9000;
-        update_local_cnt = 0;
-        update_local_flag = true;
-    }
-    if(syn_app_cnt >= 10000 - syn_threod)
-    {
-        syn_threod = 9000;
         syn_app_cnt = 0;
         syn_app_flag = true;
+    }
+	if(update_local_cnt >= 1000)
+    {
+        update_local_cnt = 0;
+        update_local_flag = true;
     }
 
 }

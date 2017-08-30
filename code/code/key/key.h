@@ -3,6 +3,11 @@
 
 #include "N76E003.h"
 
+sbit KEY1 = P1^5;	//通道键
+sbit KEY2 = P1^7;  //模式键
+sbit KEY = P0^3;
+sbit CON_RELAY = P0^4;
+
 #define KEY3_595 (0X01)
 #define KEY2_595 (0X02)
 #define KEY1_595 (0X04)
