@@ -7,7 +7,7 @@ void main(void)
 	while(1)
 	{
 		dealLogic();
-	//	dealRemote();
+		dealRemote();
 		//saveModeToFlash();
 	}
 }

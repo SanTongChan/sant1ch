@@ -138,6 +138,67 @@ void dealLogic(void)
 		ledScan();
 	}
 }
+void dealRemoteStudy(void)
+{
+    if(dev_def.dev_mode == DEV_REMOTE)
+    {
+        if(ir_data.cnt == 10)
+        {
+            //LEDÉÁ
+			RfLedOffXt(30,30,4);
+        }
+        if(ir_data.cnt >= 10 && ir_data.timer_cnt >= 150)
+        {
+            dev_def.remote_val = ir_data.ir_data;
+            clearIrData();
+            dev_def.dev_mode = dev_def.last_dev_mode;
+        }
+    }
+}
+void dealRemoteNormal(void)
+{
+    static uint16_t cnt = 0;
+    uint8_t i = 0;
+    cnt++;
+    if(dev_def.dev_mode != DEV_REMOTE && dev_def.dev_mode != DEV_TIME)
+    {
+        relays[0] = RELAY1;
+        relays[1] = RELAY2;
+        relays[2] = RELAY3;
+        relays[3] = RELAY4;
+        if(ir_data.cnt == 1)
+        {
+
+			if(ir_data.ir_data == dev_def.remote_val)
+			{
+				KEY = 0;
+				cnt = 0;
+				
+			}
+        }
+        if(ir_data.timer_cnt >= 150 && ir_data.cnt >= 1
+				&& ir_data.ir_data == dev_def.remote_val)
+        {
+            if(cnt <= 2500)
+            {
+				KEY = 1;             
+				dev_def.update_flag = true;
+            }
+            clearIrData();
+        }
+    }
+}
+void dealRemote(void)
+{
+	if(deal_remote_flag)
+	{
+		deal_remote_flag = false;
+		analyzeRfData();
+		//dealRemoteLed();
+		dealRemoteStudy();
+		dealRemoteNormal();
+	}
+}
 void logicInit(void)
 {
 	modeInit();
@@ -145,10 +206,8 @@ void logicInit(void)
 	keyInit();
 	relayInit();
 	RfLedOffXt(50,50,5);
-#if 0
 	captureInit();
 	timer1Init();
-#endif
     timer0Init();
 }
 

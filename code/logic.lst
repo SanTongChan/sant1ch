@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 00:44:38 PAGE 1   
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 01:29:40 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOGIC
@@ -62,7 +62,7 @@ line level    source
   51   2              }
   52   1              RfLedOnXt(10,10,1);
   53   1      }
-C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 00:44:38 PAGE 2   
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 01:29:40 PAGE 2   
 
   54          static void modeInit(void)
   55          {
@@ -126,7 +126,7 @@ line level    source
  113   2                      {
  114   3                              dev_def.update_flag = false;
  115   3                      }
-C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 00:44:38 PAGE 3   
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 01:29:40 PAGE 3   
 
  116   2              }
  117   1      }
@@ -153,24 +153,52 @@ line level    source
  138   2                      ledScan();
  139   2              }
  140   1      }
- 141          void logicInit(void)
+ 141          void dealRemoteStudy(void)
  142          {
- 143   1              modeInit();
- 144   1              ledInit();
- 145   1              keyInit();
- 146   1              relayInit();
- 147   1              RfLedOffXt(50,50,5);
- 148   1      #if 0
-                      captureInit();
-                      timer1Init();
-              #endif
- 152   1          timer0Init();
- 153   1      }
- 154          
+ 143   1          if(dev_def.dev_mode == DEV_REMOTE)
+ 144   1          {
+ 145   2              if(ir_data.cnt == 10)
+ 146   2              {
+ 147   3                  //LEDÉÁ
+ 148   3                              RfLedOffXt(20,20,4);
+ 149   3              }
+ 150   2              if(ir_data.cnt >= 10 && ir_data.timer_cnt >= 150)
+ 151   2              {
+ 152   3                  dev_def.remote_val = ir_data.ir_data;
+ 153   3                  clearIrData();
+ 154   3                  dev_def.dev_mode = dev_def.last_dev_mode;
+ 155   3              }
+ 156   2          }
+ 157   1      }
+ 158          void dealRemote(void)
+ 159          {
+ 160   1              if(deal_remote_flag)
+ 161   1              {
+ 162   2                      deal_remote_flag = false;
+ 163   2                      analyzeRfData();
+ 164   2                      //dealRemoteLed();
+ 165   2                      dealRemoteStudy();
+ 166   2                      //dealRemoteNormal();
+ 167   2              }
+ 168   1      }
+ 169          void logicInit(void)
+ 170          {
+ 171   1              modeInit();
+ 172   1              ledInit();
+ 173   1              keyInit();
+ 174   1              relayInit();
+ 175   1              RfLedOffXt(50,50,5);
+ 176   1              captureInit();
+ 177   1              timer1Init();
+C51 COMPILER V9.52.0.0   LOGIC                                                             08/31/2017 01:29:40 PAGE 4   
+
+ 178   1          timer0Init();
+ 179   1      }
+ 180          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    359    ----
+   CODE SIZE        =    471    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =     12    ----
    PDATA SIZE       =   ----    ----

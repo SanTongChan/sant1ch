@@ -41,7 +41,8 @@ static void key1_short_up_press(void)
 {
 	if(dev_def.dev_mode == DEV_REMOTE)
 	{
-		
+		dev_def.dev_mode = dev_def.last_dev_mode;
+		RfLedOff();
 	}
 	else if(dev_def.dev_mode == DEV_TIME)
 	{
@@ -62,7 +63,8 @@ static void key2_short_up_press(void)
 {
 	if(dev_def.dev_mode == DEV_REMOTE)
 	{
-		
+		dev_def.dev_mode = dev_def.last_dev_mode;
+		RfLedOff();
 	}
 	else if(dev_def.dev_mode == DEV_TIME)
 	{
@@ -91,6 +93,12 @@ static void key2_long_press(void)
 	{
 		dev_def.dev_mode = dev_def.last_dev_mode;
 		RfLedOff();
+	}
+	else if(dev_def.dev_mode != DEV_REMOTE)
+	{
+		dev_def.dev_mode = DEV_REMOTE;
+		//Çå³ýÂëÖµ
+		RfLedBlink(10,10);
 	}
 }
 
