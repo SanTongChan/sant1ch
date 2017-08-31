@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:17:05 PAGE 1   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:29:56 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOGIC
@@ -62,7 +62,7 @@ line level    source
   51   1              RfLedOnXt(10,10,1);//灯闪一次
   52   1      }
   53          void saveModeToFlash(void)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:17:05 PAGE 2   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:29:56 PAGE 2   
 
   54          {
   55   1          if(save_mode_flag)
@@ -126,7 +126,7 @@ line level    source
  113   4                                      dev_def.timer_cnt = 0;
  114   4                              }
  115   3                              if(dev_def.timer_cnt >= dev_def.jogging_time)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:17:05 PAGE 3   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:29:56 PAGE 3   
 
  116   3                              {
  117   4                                      dev_def.timer_cnt = 0;
@@ -190,7 +190,7 @@ line level    source
  175   2              }
  176   1      }
  177          void dealRemoteStudy(void)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:17:05 PAGE 4   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:29:56 PAGE 4   
 
  178          {
  179   1          if(dev_def.dev_mode == DEV_REMOTE)//在remote学习模式下
@@ -254,7 +254,7 @@ line level    source
  237   3              }
  238   2          }
  239   1      }
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:17:05 PAGE 5   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/01/2017 01:29:56 PAGE 5   
 
  240          void dealRemote(void)
  241          {
@@ -268,20 +268,19 @@ line level    source
  249   1      }
  250          void logicInit(void)
  251          {
- 252   1              modeInit();
- 253   1              ledInit();
- 254   1              keyInit();
- 255   1              relayInit();
- 256   1              RfLedOffXt(50,50,5);
- 257   1              captureInit();
- 258   1              timer1Init();
- 259   1          timer0Init();
- 260   1      }
- 261          
+ 252   1              ledInit();
+ 253   1              keyInit();
+ 254   1              relayInit();
+ 255   1              modeInit();
+ 256   1              captureInit();
+ 257   1              timer1Init();
+ 258   1          timer0Init();
+ 259   1      }
+ 260          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =   1017    ----
+   CODE SIZE        =   1004    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =     11    ----
    PDATA SIZE       =   ----    ----

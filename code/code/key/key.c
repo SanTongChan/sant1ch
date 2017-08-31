@@ -155,6 +155,7 @@ void keyInit(void)
    	P1M2 &= 0X5f;
 	P0M1 &= 0xE7;
    	P0M2 |= 0X18; 
+	KEY = 1;
 	CON_RELAY = 0;
    	registerKeys();
 }

@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22                                                        09/01/2017  01:17:05  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22                                                        09/01/2017  01:29:57  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  sant1ch (TIMER)
 
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 2
 
 
             CODE    0003H     0008H     UNIT         ?PR?KEYSCAN?KEY_DRIVER
@@ -95,37 +95,37 @@ LINK MAP OF MODULE:  sant1ch (TIMER)
             CODE    1387H     0029H     UNIT         ?PR?UPDATELOCAL?LOGIC
             CODE    13B0H     0029H     UNIT         ?PR?DEALLOGIC?LOGIC
             CODE    13D9H     0025H     UNIT         ?PR?FLASHWRITEBYTES?FLASH
-            CODE    13FEH     0022H     UNIT         ?PR?LOGICINIT?LOGIC
-            CODE    1420H     0021H     UNIT         ?PR?FLASHREAD?FLASH
-            CODE    1441H     001EH     UNIT         ?PR?KEY1_SHORT_UP_PRESS?KEY
-            CODE    145FH     001CH     UNIT         ?PR?TIMER2INIT?REMOTE
-            CODE    147BH     001BH     UNIT         ?PR?KEY1_LONG_PRESS?KEY
-            CODE    1496H     001AH     UNIT         ?PR?_RFLEDONXT?LED
-            CODE    14B0H     001AH     UNIT         ?PR?_RFLEDOFFXT?LED
-            CODE    14CAH     0019H     UNIT         ?PR?KEY2_TWICE_PRESS?KEY
-            CODE    14E3H     0019H     UNIT         ?PR?_RFLEDBLINK?LED
-            CODE    14FCH     0019H     UNIT         ?PR?CLEARIRDATA?REMOTE
-            CODE    1515H     0016H     UNIT         ?PR?TIMER0INIT?TIMER
-            CODE    152BH     0016H     UNIT         ?PR?FLASHERASE?FLASH
-            CODE    1541H     0014H     UNIT         ?PR?TIMER1INIT?TIMER
-            CODE    1555H     0013H     UNIT         ?PR?FLASHENABLEAPROM?FLASH
-            CODE    1568H     0013H     UNIT         ?PR?FLASHDISABLEAPROM?FLASH
-            CODE    157BH     0011H     UNIT         ?PR?DEALREMOTE?LOGIC
-            CODE    158CH     0011H     UNIT         ?PR?KEYINIT?KEY
-            CODE    159DH     000EH     UNIT         ?PR?MAIN?MAIN
-            CODE    15ABH     000CH     UNIT         ?PR?FLASHWRITE?FLASH
-            CODE    15B7H     000CH     UNIT         ?PR?CAPTUREINIT?REMOTE
-            CODE    15C3H     000AH     UNIT         ?PR?TIMER1_ISR?TIMER
-            CODE    15CDH     0009H     UNIT         ?PR?KEY1_IS_PRESS?KEY
-            CODE    15D6H     0009H     UNIT         ?PR?KEY2_IS_PRESS?KEY
-            CODE    15DFH     0009H     UNIT         ?PR?LEDINIT?LED
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 3
+            CODE    13FEH     0021H     UNIT         ?PR?FLASHREAD?FLASH
+            CODE    141FH     001EH     UNIT         ?PR?KEY1_SHORT_UP_PRESS?KEY
+            CODE    143DH     001CH     UNIT         ?PR?TIMER2INIT?REMOTE
+            CODE    1459H     001BH     UNIT         ?PR?KEY1_LONG_PRESS?KEY
+            CODE    1474H     001AH     UNIT         ?PR?_RFLEDONXT?LED
+            CODE    148EH     001AH     UNIT         ?PR?_RFLEDOFFXT?LED
+            CODE    14A8H     0019H     UNIT         ?PR?KEY2_TWICE_PRESS?KEY
+            CODE    14C1H     0019H     UNIT         ?PR?_RFLEDBLINK?LED
+            CODE    14DAH     0019H     UNIT         ?PR?CLEARIRDATA?REMOTE
+            CODE    14F3H     0016H     UNIT         ?PR?TIMER0INIT?TIMER
+            CODE    1509H     0016H     UNIT         ?PR?FLASHERASE?FLASH
+            CODE    151FH     0015H     UNIT         ?PR?LOGICINIT?LOGIC
+            CODE    1534H     0014H     UNIT         ?PR?TIMER1INIT?TIMER
+            CODE    1548H     0013H     UNIT         ?PR?KEYINIT?KEY
+            CODE    155BH     0013H     UNIT         ?PR?FLASHENABLEAPROM?FLASH
+            CODE    156EH     0013H     UNIT         ?PR?FLASHDISABLEAPROM?FLASH
+            CODE    1581H     0011H     UNIT         ?PR?DEALREMOTE?LOGIC
+            CODE    1592H     000EH     UNIT         ?PR?MAIN?MAIN
+            CODE    15A0H     000CH     UNIT         ?PR?FLASHWRITE?FLASH
+            CODE    15ACH     000CH     UNIT         ?PR?CAPTUREINIT?REMOTE
+            CODE    15B8H     000AH     UNIT         ?PR?TIMER1_ISR?TIMER
+            CODE    15C2H     0009H     UNIT         ?PR?KEY1_IS_PRESS?KEY
+            CODE    15CBH     0009H     UNIT         ?PR?KEY2_IS_PRESS?KEY
+            CODE    15D4H     0009H     UNIT         ?PR?LEDINIT?LED
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 3
 
 
-            CODE    15E8H     0007H     UNIT         ?PR?RELAYINIT?LOGIC
-            CODE    15EFH     0007H     UNIT         ?PR?CAPTUREIOINIT?REMOTE
-            CODE    15F6H     0006H     UNIT         ?PR?RFLEDON?LED
-            CODE    15FCH     0006H     UNIT         ?PR?RFLEDOFF?LED
+            CODE    15DDH     0007H     UNIT         ?PR?RELAYINIT?LOGIC
+            CODE    15E4H     0007H     UNIT         ?PR?CAPTUREIOINIT?REMOTE
+            CODE    15EBH     0006H     UNIT         ?PR?RFLEDON?LED
+            CODE    15F1H     0006H     UNIT         ?PR?RFLEDOFF?LED
 
 
 
@@ -146,19 +146,13 @@ SEGMENT                                     DATA_GROUP
   +--> ?PR?SAVEMODETOFLASH?LOGIC
 
 ?PR?LOGICINIT?LOGIC                       -----    -----
-  +--> ?PR?MODEINIT?LOGIC
   +--> ?PR?LEDINIT?LED
   +--> ?PR?KEYINIT?KEY
   +--> ?PR?RELAYINIT?LOGIC
-  +--> ?PR?_RFLEDOFFXT?LED
+  +--> ?PR?MODEINIT?LOGIC
   +--> ?PR?CAPTUREINIT?REMOTE
   +--> ?PR?TIMER1INIT?TIMER
   +--> ?PR?TIMER0INIT?TIMER
-
-?PR?MODEINIT?LOGIC                        -----    -----
-  +--> ?PR?FLASHREAD?FLASH
-  +--> ?PR?RFLEDOFF?LED
-  +--> ?PR?RFLEDON?LED
 
 ?PR?KEYINIT?KEY                           -----    -----
   +--> ?PR?REGISTERKEYS?KEY
@@ -179,15 +173,15 @@ SEGMENT                                     DATA_GROUP
   +--> ?PR?INCJOGGINGTIME?LOGIC
 
 ?PR?INCJOGGINGTIME?LOGIC                  -----    -----
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 4
-
-
   +--> ?PR?_RFLEDONXT?LED
 
 ?PR?KEY1_LONG_PRESS?KEY                   -----    -----
   +--> ?PR?RFLEDOFF?LED
 
 ?PR?KEY1_TWICE_PRESS?KEY                  -----    -----
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 4
+
+
   +--> ?PR?RFLEDOFF?LED
   +--> ?PR?RFLEDON?LED
 
@@ -208,6 +202,11 @@ SEGMENT                                     DATA_GROUP
 
 ?PR?KEY2_TWICE_PRESS?KEY                  -----    -----
   +--> ?PR?_RFLEDONXT?LED
+
+?PR?MODEINIT?LOGIC                        -----    -----
+  +--> ?PR?FLASHREAD?FLASH
+  +--> ?PR?RFLEDOFF?LED
+  +--> ?PR?RFLEDON?LED
 
 ?PR?CAPTUREINIT?REMOTE                    -----    -----
   +--> ?PR?CAPTUREIOINIT?REMOTE
@@ -239,10 +238,10 @@ SEGMENT                                     DATA_GROUP
 
 ?PR?DEALREMOTESTUDY?LOGIC                 -----    -----
   +--> ?PR?_RFLEDOFFXT?LED
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 5
-
-
   +--> ?PR?_RFLEDONXT?LED
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 5
+
+
   +--> ?PR?CLEARIRDATA?REMOTE
 
 ?PR?DEALREMOTENORMAL?LOGIC                -----    -----
@@ -278,7 +277,7 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   C:0F5DH         PUBLIC        Timer0_ISR
-  C:15C3H         PUBLIC        Timer1_ISR
+  C:15B8H         PUBLIC        Timer1_ISR
   B:00A8H.7       PUBLIC        EA
   D:00D8H         PUBLIC        PWMCON0
   D:00A8H         PUBLIC        IE
@@ -298,44 +297,44 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00E8H         PUBLIC        ADCCON0
   D:00C0H         PUBLIC        I2CON
   D:00C8H         PUBLIC        T2CON
-  C:1515H         PUBLIC        timer0Init
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 6
+  C:14F3H         PUBLIC        timer0Init
+  C:1534H         PUBLIC        timer1Init
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 6
 
 
-  C:1541H         PUBLIC        timer1Init
   D:008EH         PUBLIC        CKCON
   D:00D0H         PUBLIC        PSW
   -------         PROC          TIMER0INIT
-  C:1515H         LINE#         8
-  C:1515H         LINE#         9
-  C:1515H         LINE#         10
-  C:1518H         LINE#         11
-  C:151BH         LINE#         12
-  C:151EH         LINE#         13
-  C:1521H         LINE#         14
-  C:1524H         LINE#         15
-  C:1526H         LINE#         16
-  C:1528H         LINE#         17
-  C:152AH         LINE#         18
+  C:14F3H         LINE#         8
+  C:14F3H         LINE#         9
+  C:14F3H         LINE#         10
+  C:14F6H         LINE#         11
+  C:14F9H         LINE#         12
+  C:14FCH         LINE#         13
+  C:14FFH         LINE#         14
+  C:1502H         LINE#         15
+  C:1504H         LINE#         16
+  C:1506H         LINE#         17
+  C:1508H         LINE#         18
   -------         ENDPROC       TIMER0INIT
   -------         PROC          TIMER1INIT
-  C:1541H         LINE#         19
-  C:1541H         LINE#         20
-  C:1541H         LINE#         21
-  C:1544H         LINE#         22
-  C:1547H         LINE#         23
-  C:154AH         LINE#         24
-  C:154DH         LINE#         25
-  C:1550H         LINE#         26
-  C:1552H         LINE#         27
-  C:1554H         LINE#         28
+  C:1534H         LINE#         19
+  C:1534H         LINE#         20
+  C:1534H         LINE#         21
+  C:1537H         LINE#         22
+  C:153AH         LINE#         23
+  C:153DH         LINE#         24
+  C:1540H         LINE#         25
+  C:1543H         LINE#         26
+  C:1545H         LINE#         27
+  C:1547H         LINE#         28
   -------         ENDPROC       TIMER1INIT
   -------         PROC          TIMER1_ISR
-  C:15C3H         LINE#         30
-  C:15C3H         LINE#         32
-  C:15C6H         LINE#         33
-  C:15C9H         LINE#         34
-  C:15CCH         LINE#         35
+  C:15B8H         LINE#         30
+  C:15B8H         LINE#         32
+  C:15BBH         LINE#         33
+  C:15BEH         LINE#         34
+  C:15C1H         LINE#         35
   -------         ENDPROC       TIMER1_ISR
   -------         PROC          TIMER0_ISR
   -------         DO            
@@ -359,10 +358,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0FA0H         LINE#         53
   C:0FA6H         LINE#         54
   C:0FA9H         LINE#         55
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 7
-
-
   C:0FA9H         LINE#         56
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 7
+
+
   C:0FB4H         LINE#         57
   C:0FB4H         LINE#         58
   C:0FBAH         LINE#         59
@@ -386,20 +385,20 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00B0H         PUBLIC        P3
   D:002DH         PUBLIC        deal_remote_flag
   D:00D8H         PUBLIC        PWMCON0
-  C:157BH         PUBLIC        dealRemote
+  C:1581H         PUBLIC        dealRemote
   C:12EEH         PUBLIC        decJoggingTime
   C:13B0H         PUBLIC        dealLogic
   D:00A8H         PUBLIC        IE
   C:12B4H         PUBLIC        incJoggingTime
   D:00B8H         PUBLIC        IP
   C:0EE2H         PUBLIC        dealRemoteStudy
-  C:13FEH         PUBLIC        logicInit
+  C:151FH         PUBLIC        logicInit
   B:0080H.7       PUBLIC        RELAY1
   D:002EH         PUBLIC        led_flag
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:002FH         PUBLIC        save_mode_flag
-  C:15E8H         SYMBOL        relayInit
+  C:15DDH         SYMBOL        relayInit
   C:0D8EH         SYMBOL        modeInit
   B:0080H.4       PUBLIC        CON_RELAY
   D:00F8H         PUBLIC        SCON_1
@@ -419,10 +418,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         PROC          INCJOGGINGTIME
   C:12B4H         LINE#         21
   C:12B4H         LINE#         22
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 8
-
-
   C:12B4H         LINE#         23
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 8
+
+
   C:12C1H         LINE#         24
   C:12C1H         LINE#         25
   C:12C9H         LINE#         26
@@ -479,10 +478,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0E27H         LINE#         82
   C:0E27H         LINE#         83
   C:0E2CH         LINE#         84
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 9
-
-
   C:0E30H         LINE#         85
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 9
+
+
   C:0E38H         LINE#         86
   C:0E42H         LINE#         87
   C:0E42H         LINE#         88
@@ -496,11 +495,11 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0E55H         LINE#         96
   -------         ENDPROC       MODEINIT
   -------         PROC          RELAYINIT
-  C:15E8H         LINE#         97
-  C:15E8H         LINE#         98
-  C:15E8H         LINE#         99
-  C:15EBH         LINE#         100
-  C:15EEH         LINE#         101
+  C:15DDH         LINE#         97
+  C:15DDH         LINE#         98
+  C:15DDH         LINE#         99
+  C:15E0H         LINE#         100
+  C:15E3H         LINE#         101
   -------         ENDPROC       RELAYINIT
   -------         PROC          SYNCAPP
   -------         DO            
@@ -539,10 +538,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         PROC          UPDATELOCAL
   -------         DO            
   D:002AH         SYMBOL        high_flag
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 10
-
-
   -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 10
+
+
   C:1387H         LINE#         133
   C:1387H         LINE#         134
   C:1387H         LINE#         136
@@ -599,10 +598,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0EFCH         LINE#         184
   C:0EFCH         LINE#         185
   C:0F07H         LINE#         186
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 11
-
-
   C:0F09H         LINE#         187
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 11
+
+
   C:0F10H         LINE#         188
   C:0F10H         LINE#         189
   C:0F1DH         LINE#         190
@@ -659,31 +658,30 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0CC4H         LINE#         239
   -------         ENDPROC       DEALREMOTENORMAL
   -------         PROC          DEALREMOTE
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 12
+  C:1581H         LINE#         240
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 12
 
 
-  C:157BH         LINE#         240
-  C:157BH         LINE#         241
-  C:157BH         LINE#         242
-  C:157FH         LINE#         243
-  C:157FH         LINE#         244
-  C:1582H         LINE#         245
-  C:1585H         LINE#         246
-  C:1588H         LINE#         247
-  C:158BH         LINE#         248
-  C:158BH         LINE#         249
+  C:1581H         LINE#         241
+  C:1581H         LINE#         242
+  C:1585H         LINE#         243
+  C:1585H         LINE#         244
+  C:1588H         LINE#         245
+  C:158BH         LINE#         246
+  C:158EH         LINE#         247
+  C:1591H         LINE#         248
+  C:1591H         LINE#         249
   -------         ENDPROC       DEALREMOTE
   -------         PROC          LOGICINIT
-  C:13FEH         LINE#         250
-  C:13FEH         LINE#         251
-  C:13FEH         LINE#         252
-  C:1401H         LINE#         253
-  C:1404H         LINE#         254
-  C:1407H         LINE#         255
-  C:140AH         LINE#         256
-  C:1417H         LINE#         257
-  C:141AH         LINE#         258
-  C:141DH         LINE#         259
+  C:151FH         LINE#         250
+  C:151FH         LINE#         251
+  C:151FH         LINE#         252
+  C:1522H         LINE#         253
+  C:1525H         LINE#         254
+  C:1528H         LINE#         255
+  C:152BH         LINE#         256
+  C:152EH         LINE#         257
+  C:1531H         LINE#         258
   -------         ENDPROC       LOGICINIT
   -------         ENDMOD        LOGIC
 
@@ -700,12 +698,12 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00D8H         PUBLIC        PWMCON0
   C:0FD6H         SYMBOL        registerKeys
   C:1328H         SYMBOL        key1_twice_press
-  C:14CAH         SYMBOL        key2_twice_press
+  C:14A8H         SYMBOL        key2_twice_press
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   B:0090H.5       PUBLIC        KEY1
   B:0090H.7       PUBLIC        KEY2
-  C:147BH         SYMBOL        key1_long_press
+  C:1459H         SYMBOL        key1_long_press
   C:1217H         SYMBOL        key2_long_press
   C:000EH         SYMBOL        key1_short_press
   B:0080H.7       PUBLIC        RELAY1
@@ -713,38 +711,38 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:0088H         PUBLIC        TCON
   B:0080H.4       PUBLIC        CON_RELAY
   D:00F8H         PUBLIC        SCON_1
-  C:15CDH         SYMBOL        key1_is_press
-  C:15D6H         SYMBOL        key2_is_press
+  C:15C2H         SYMBOL        key1_is_press
+  C:15CBH         SYMBOL        key2_is_press
   D:00E8H         PUBLIC        ADCCON0
   D:00C0H         PUBLIC        I2CON
-  C:158CH         PUBLIC        keyInit
-  C:1441H         SYMBOL        key1_short_up_press
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 13
-
-
+  C:1548H         PUBLIC        keyInit
+  C:141FH         SYMBOL        key1_short_up_press
   D:00C8H         PUBLIC        T2CON
   C:001EH         SYMBOL        key2_short_up_press
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 13
+
+
   B:0080H.3       PUBLIC        KEY
   D:00D0H         PUBLIC        PSW
   -------         PROC          KEY1_IS_PRESS
-  C:15CDH         LINE#         8
-  C:15CDH         LINE#         9
-  C:15CDH         LINE#         10
-  C:15D0H         LINE#         11
-  C:15D0H         LINE#         12
-  C:15D3H         LINE#         13
-  C:15D3H         LINE#         14
-  C:15D5H         LINE#         15
+  C:15C2H         LINE#         8
+  C:15C2H         LINE#         9
+  C:15C2H         LINE#         10
+  C:15C5H         LINE#         11
+  C:15C5H         LINE#         12
+  C:15C8H         LINE#         13
+  C:15C8H         LINE#         14
+  C:15CAH         LINE#         15
   -------         ENDPROC       KEY1_IS_PRESS
   -------         PROC          KEY2_IS_PRESS
-  C:15D6H         LINE#         16
-  C:15D6H         LINE#         17
-  C:15D6H         LINE#         18
-  C:15D9H         LINE#         19
-  C:15D9H         LINE#         20
-  C:15DCH         LINE#         21
-  C:15DCH         LINE#         22
-  C:15DEH         LINE#         23
+  C:15CBH         LINE#         16
+  C:15CBH         LINE#         17
+  C:15CBH         LINE#         18
+  C:15CEH         LINE#         19
+  C:15CEH         LINE#         20
+  C:15D1H         LINE#         21
+  C:15D1H         LINE#         22
+  C:15D3H         LINE#         23
   -------         ENDPROC       KEY2_IS_PRESS
   -------         PROC          KEY1_SHORT_PRESS
   C:000EH         LINE#         25
@@ -756,21 +754,21 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0019H         LINE#         31
   -------         ENDPROC       KEY1_SHORT_PRESS
   -------         PROC          KEY1_SHORT_UP_PRESS
-  C:1441H         LINE#         32
-  C:1441H         LINE#         33
-  C:1441H         LINE#         34
-  C:144AH         LINE#         35
-  C:144AH         LINE#         37
-  C:144AH         LINE#         38
-  C:144EH         LINE#         39
-  C:144EH         LINE#         40
-  C:1451H         LINE#         41
-  C:1451H         LINE#         43
-  C:1451H         LINE#         44
-  C:1456H         LINE#         45
-  C:1458H         LINE#         46
-  C:145EH         LINE#         47
-  C:145EH         LINE#         48
+  C:141FH         LINE#         32
+  C:141FH         LINE#         33
+  C:141FH         LINE#         34
+  C:1428H         LINE#         35
+  C:1428H         LINE#         37
+  C:1428H         LINE#         38
+  C:142CH         LINE#         39
+  C:142CH         LINE#         40
+  C:142FH         LINE#         41
+  C:142FH         LINE#         43
+  C:142FH         LINE#         44
+  C:1434H         LINE#         45
+  C:1436H         LINE#         46
+  C:143CH         LINE#         47
+  C:143CH         LINE#         48
   -------         ENDPROC       KEY1_SHORT_UP_PRESS
   -------         PROC          KEY2_SHORT_UP_PRESS
   C:001EH         LINE#         49
@@ -779,11 +777,11 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0026H         LINE#         52
   C:0026H         LINE#         53
   C:002EH         LINE#         54
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 14
-
-
   C:0030H         LINE#         55
   C:0030H         LINE#         56
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 14
+
+
   C:003BH         LINE#         57
   C:003DH         LINE#         58
   C:0044H         LINE#         59
@@ -798,20 +796,20 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:005FH         LINE#         68
   -------         ENDPROC       KEY2_SHORT_UP_PRESS
   -------         PROC          KEY1_LONG_PRESS
-  C:147BH         LINE#         69
-  C:147BH         LINE#         70
-  C:147BH         LINE#         71
-  C:1484H         LINE#         72
-  C:1484H         LINE#         74
-  C:1484H         LINE#         75
-  C:1488H         LINE#         76
-  C:1488H         LINE#         77
-  C:1490H         LINE#         78
-  C:1493H         LINE#         79
-  C:1493H         LINE#         81
-  C:1493H         LINE#         82
-  C:1495H         LINE#         83
-  C:1495H         LINE#         84
+  C:1459H         LINE#         69
+  C:1459H         LINE#         70
+  C:1459H         LINE#         71
+  C:1462H         LINE#         72
+  C:1462H         LINE#         74
+  C:1462H         LINE#         75
+  C:1466H         LINE#         76
+  C:1466H         LINE#         77
+  C:146EH         LINE#         78
+  C:1471H         LINE#         79
+  C:1471H         LINE#         81
+  C:1471H         LINE#         82
+  C:1473H         LINE#         83
+  C:1473H         LINE#         84
   -------         ENDPROC       KEY1_LONG_PRESS
   -------         PROC          KEY2_LONG_PRESS
   C:1217H         LINE#         85
@@ -839,11 +837,11 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         ENDPROC       KEY2_LONG_PRESS
   -------         PROC          KEY1_TWICE_PRESS
   C:1328H         LINE#         109
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 15
-
-
   C:1328H         LINE#         110
   C:1328H         LINE#         111
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 15
+
+
   C:132FH         LINE#         112
   C:132FH         LINE#         113
   C:1331H         LINE#         114
@@ -866,16 +864,16 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:1359H         LINE#         133
   -------         ENDPROC       KEY1_TWICE_PRESS
   -------         PROC          KEY2_TWICE_PRESS
-  C:14CAH         LINE#         134
-  C:14CAH         LINE#         135
-  C:14CAH         LINE#         136
-  C:14D2H         LINE#         137
-  C:14D2H         LINE#         138
-  C:14D5H         LINE#         139
-  C:14E2H         LINE#         140
-  C:14E2H         LINE#         142
-  C:14E2H         LINE#         144
-  C:14E2H         LINE#         145
+  C:14A8H         LINE#         134
+  C:14A8H         LINE#         135
+  C:14A8H         LINE#         136
+  C:14B0H         LINE#         137
+  C:14B0H         LINE#         138
+  C:14B3H         LINE#         139
+  C:14C0H         LINE#         140
+  C:14C0H         LINE#         142
+  C:14C0H         LINE#         144
+  C:14C0H         LINE#         145
   -------         ENDPROC       KEY2_TWICE_PRESS
   -------         PROC          REGISTERKEYS
   C:0FD6H         LINE#         147
@@ -884,14 +882,15 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:100CH         LINE#         150
   -------         ENDPROC       REGISTERKEYS
   -------         PROC          KEYINIT
-  C:158CH         LINE#         152
-  C:158CH         LINE#         153
-  C:158CH         LINE#         154
-  C:158FH         LINE#         155
-  C:1592H         LINE#         156
-  C:1595H         LINE#         157
-  C:1598H         LINE#         158
-  C:159AH         LINE#         159
+  C:1548H         LINE#         152
+  C:1548H         LINE#         153
+  C:1548H         LINE#         154
+  C:154BH         LINE#         155
+  C:154EH         LINE#         156
+  C:1551H         LINE#         157
+  C:1554H         LINE#         158
+  C:1556H         LINE#         159
+  C:1558H         LINE#         160
   -------         ENDPROC       KEYINIT
   -------         ENDMOD        KEY
 
@@ -899,10 +898,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0E56H         SEGMENT       ?C_C51STARTUP
   I:003CH         SEGMENT       ?STACK
   C:0000H         PUBLIC        ?C_STARTUP
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 16
-
-
   D:00E0H         SYMBOL        ACC
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 16
+
+
   D:00F0H         SYMBOL        B
   D:0083H         SYMBOL        DPH
   D:0082H         SYMBOL        DPL
@@ -941,7 +940,7 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00D8H         PUBLIC        PWMCON0
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
-  C:159DH         PUBLIC        main
+  C:1592H         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   D:00F8H         PUBLIC        SCON_1
@@ -950,19 +949,19 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00C8H         PUBLIC        T2CON
   D:00D0H         PUBLIC        PSW
   -------         PROC          MAIN
-  C:159DH         LINE#         4
-  C:159DH         LINE#         5
-  C:159DH         LINE#         6
-  C:15A0H         LINE#         7
-  C:15A0H         LINE#         8
-  C:15A0H         LINE#         9
-  C:15A3H         LINE#         10
-  C:15A6H         LINE#         11
-  C:15A9H         LINE#         12
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 17
-
-
+  C:1592H         LINE#         4
+  C:1592H         LINE#         5
+  C:1592H         LINE#         6
+  C:1595H         LINE#         7
+  C:1595H         LINE#         8
+  C:1595H         LINE#         9
+  C:1598H         LINE#         10
+  C:159BH         LINE#         11
+  C:159EH         LINE#         12
   -------         ENDPROC       MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 17
+
+
   -------         ENDMOD        MAIN
 
   -------         MODULE        KEY_DRIVER
@@ -1019,10 +1018,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:0017H         SYMBOL        _key_press_twice_proc_cb
   -------         DO            
   D:0007H         SYMBOL        i
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 18
-
-
   -------         ENDDO         
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 18
+
+
   C:0CC5H         LINE#         61
   C:0CC5H         LINE#         67
   C:0CC5H         LINE#         68
@@ -1079,10 +1078,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:01CBH         LINE#         120
   C:01CBH         LINE#         121
   C:01E3H         LINE#         122
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 19
-
-
   C:01E3H         LINE#         123
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 19
+
+
   C:01E3H         LINE#         124
   C:01F4H         LINE#         125
   C:0206H         LINE#         126
@@ -1139,10 +1138,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0416H         LINE#         183
   C:0416H         LINE#         184
   C:0416H         LINE#         185
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 20
-
-
   C:0435H         LINE#         186
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 20
+
+
   C:0435H         LINE#         187
   C:045EH         LINE#         189
   C:045EH         LINE#         190
@@ -1199,37 +1198,37 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00B2H         PUBLIC        P0M2
   D:0080H         PUBLIC        P0
   D:0090H         PUBLIC        P1
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 21
-
-
   D:00A0H         PUBLIC        P2
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 21
+
+
   D:00B0H         PUBLIC        P3
   D:00D8H         PUBLIC        PWMCON0
-  C:15F6H         PUBLIC        RfLedOn
+  C:15EBH         PUBLIC        RfLedOn
   D:00A8H         PUBLIC        IE
   D:00B8H         PUBLIC        IP
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:14B0H         PUBLIC        _RfLedOffXt
+  C:148EH         PUBLIC        _RfLedOffXt
   C:11BFH         PUBLIC        ledScan
-  C:14E3H         PUBLIC        _RfLedBlink
+  C:14C1H         PUBLIC        _RfLedBlink
   D:00F8H         PUBLIC        SCON_1
   D:001AH         PUBLIC        led_def
-  C:15DFH         PUBLIC        ledInit
+  C:15D4H         PUBLIC        ledInit
   B:0080H.5       PUBLIC        RF_LED
   D:00E8H         PUBLIC        ADCCON0
-  C:1496H         PUBLIC        _RfLedOnXt
+  C:1474H         PUBLIC        _RfLedOnXt
   D:00C0H         PUBLIC        I2CON
   D:00C8H         PUBLIC        T2CON
-  C:15FCH         PUBLIC        RfLedOff
+  C:15F1H         PUBLIC        RfLedOff
   D:00D0H         PUBLIC        PSW
   -------         PROC          LEDINIT
-  C:15DFH         LINE#         5
-  C:15DFH         LINE#         6
-  C:15DFH         LINE#         7
-  C:15E2H         LINE#         8
-  C:15E5H         LINE#         9
-  C:15E7H         LINE#         10
+  C:15D4H         LINE#         5
+  C:15D4H         LINE#         6
+  C:15D4H         LINE#         7
+  C:15D7H         LINE#         8
+  C:15DAH         LINE#         9
+  C:15DCH         LINE#         10
   -------         ENDPROC       LEDINIT
   -------         PROC          LEDSCAN
   C:11BFH         LINE#         11
@@ -1259,10 +1258,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:11FAH         LINE#         36
   C:1205H         LINE#         37
   C:1205H         LINE#         38
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 22
-
-
   C:1208H         LINE#         39
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 22
+
+
   C:1208H         LINE#         40
   C:1213H         LINE#         41
   C:1213H         LINE#         42
@@ -1274,69 +1273,69 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         PROC          _RFLEDBLINK
   D:0006H         SYMBOL        blink_on_cnt
   D:0004H         SYMBOL        blink_off_cnt
-  C:14E3H         LINE#         48
-  C:14E3H         LINE#         49
-  C:14E3H         LINE#         50
-  C:14E6H         LINE#         51
-  C:14EAH         LINE#         52
-  C:14EEH         LINE#         53
-  C:14F1H         LINE#         54
-  C:14F3H         LINE#         55
-  C:14F5H         LINE#         56
-  C:14F7H         LINE#         57
-  C:14F9H         LINE#         58
-  C:14FBH         LINE#         59
+  C:14C1H         LINE#         48
+  C:14C1H         LINE#         49
+  C:14C1H         LINE#         50
+  C:14C4H         LINE#         51
+  C:14C8H         LINE#         52
+  C:14CCH         LINE#         53
+  C:14CFH         LINE#         54
+  C:14D1H         LINE#         55
+  C:14D3H         LINE#         56
+  C:14D5H         LINE#         57
+  C:14D7H         LINE#         58
+  C:14D9H         LINE#         59
   -------         ENDPROC       _RFLEDBLINK
   -------         PROC          _RFLEDONXT
   D:0006H         SYMBOL        blink_on_cnt
   D:0004H         SYMBOL        blink_off_cnt
   D:0003H         SYMBOL        time
-  C:1496H         LINE#         60
-  C:1496H         LINE#         61
-  C:1496H         LINE#         62
-  C:1499H         LINE#         63
-  C:149DH         LINE#         64
-  C:14A1H         LINE#         65
-  C:14A3H         LINE#         66
-  C:14A6H         LINE#         67
-  C:14A8H         LINE#         68
-  C:14AAH         LINE#         69
-  C:14ADH         LINE#         70
-  C:14AFH         LINE#         71
+  C:1474H         LINE#         60
+  C:1474H         LINE#         61
+  C:1474H         LINE#         62
+  C:1477H         LINE#         63
+  C:147BH         LINE#         64
+  C:147FH         LINE#         65
+  C:1481H         LINE#         66
+  C:1484H         LINE#         67
+  C:1486H         LINE#         68
+  C:1488H         LINE#         69
+  C:148BH         LINE#         70
+  C:148DH         LINE#         71
   -------         ENDPROC       _RFLEDONXT
   -------         PROC          _RFLEDOFFXT
   D:0006H         SYMBOL        blink_on_cnt
   D:0004H         SYMBOL        blink_off_cnt
   D:0003H         SYMBOL        time
-  C:14B0H         LINE#         72
-  C:14B0H         LINE#         73
-  C:14B0H         LINE#         74
-  C:14B3H         LINE#         75
-  C:14B7H         LINE#         76
-  C:14BBH         LINE#         77
-  C:14BEH         LINE#         78
-  C:14C0H         LINE#         79
-  C:14C2H         LINE#         80
-  C:14C4H         LINE#         81
-  C:14C6H         LINE#         82
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 23
+  C:148EH         LINE#         72
+  C:148EH         LINE#         73
+  C:148EH         LINE#         74
+  C:1491H         LINE#         75
+  C:1495H         LINE#         76
+  C:1499H         LINE#         77
+  C:149CH         LINE#         78
+  C:149EH         LINE#         79
+  C:14A0H         LINE#         80
+  C:14A2H         LINE#         81
+  C:14A4H         LINE#         82
+  C:14A7H         LINE#         83
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 23
 
 
-  C:14C9H         LINE#         83
   -------         ENDPROC       _RFLEDOFFXT
   -------         PROC          RFLEDON
-  C:15F6H         LINE#         84
-  C:15F6H         LINE#         85
-  C:15F6H         LINE#         86
-  C:15F8H         LINE#         87
-  C:15FBH         LINE#         88
+  C:15EBH         LINE#         84
+  C:15EBH         LINE#         85
+  C:15EBH         LINE#         86
+  C:15EDH         LINE#         87
+  C:15F0H         LINE#         88
   -------         ENDPROC       RFLEDON
   -------         PROC          RFLEDOFF
-  C:15FCH         LINE#         90
-  C:15FCH         LINE#         91
-  C:15FCH         LINE#         92
-  C:15FEH         LINE#         93
-  C:1601H         LINE#         94
+  C:15F1H         LINE#         90
+  C:15F1H         LINE#         91
+  C:15F1H         LINE#         92
+  C:15F3H         LINE#         93
+  C:15F6H         LINE#         94
   -------         ENDPROC       RFLEDOFF
   -------         ENDMOD        LED
 
@@ -1346,14 +1345,14 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
-  C:152BH         SYMBOL        flashErase
+  C:1509H         SYMBOL        flashErase
   D:00D8H         PUBLIC        PWMCON0
   D:00A8H         PUBLIC        IE
   X:00ADH         PUBLIC        flash_data
-  C:1420H         PUBLIC        flashRead
+  C:13FEH         PUBLIC        flashRead
   D:00C7H         PUBLIC        TA
   D:00B8H         PUBLIC        IP
-  C:15ABH         PUBLIC        flashWrite
+  C:15A0H         PUBLIC        flashWrite
   C:13D9H         SYMBOL        flashWriteBytes
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
@@ -1361,10 +1360,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00A5H         PUBLIC        IAPUEN
   D:00F8H         PUBLIC        SCON_1
   D:00A4H         PUBLIC        IAPTRG
-  C:1568H         SYMBOL        flashDisableAprom
+  C:156EH         SYMBOL        flashDisableAprom
   D:00E8H         PUBLIC        ADCCON0
   D:00C0H         PUBLIC        I2CON
-  C:1555H         SYMBOL        flashEnableAprom
+  C:155BH         SYMBOL        flashEnableAprom
   D:00A7H         PUBLIC        IAPAH
   D:00AEH         PUBLIC        IAPFD
   D:00C8H         PUBLIC        T2CON
@@ -1372,41 +1371,41 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00AFH         PUBLIC        IAPCN
   D:00D0H         PUBLIC        PSW
   -------         PROC          FLASHENABLEAPROM
-  C:1555H         LINE#         10
-  C:1555H         LINE#         11
-  C:1555H         LINE#         12
-  C:1558H         LINE#         13
-  C:155BH         LINE#         14
-  C:155EH         LINE#         15
-  C:1561H         LINE#         16
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 24
+  C:155BH         LINE#         10
+  C:155BH         LINE#         11
+  C:155BH         LINE#         12
+  C:155EH         LINE#         13
+  C:1561H         LINE#         14
+  C:1564H         LINE#         15
+  C:1567H         LINE#         16
+  C:156AH         LINE#         17
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 24
 
 
-  C:1564H         LINE#         17
-  C:1567H         LINE#         18
+  C:156DH         LINE#         18
   -------         ENDPROC       FLASHENABLEAPROM
   -------         PROC          FLASHERASE
-  C:152BH         LINE#         21
-  C:152BH         LINE#         22
-  C:152BH         LINE#         23
-  C:152EH         LINE#         24
-  C:1531H         LINE#         25
-  C:1534H         LINE#         26
-  C:1537H         LINE#         27
-  C:153AH         LINE#         28
-  C:153DH         LINE#         29
-  C:1540H         LINE#         30
+  C:1509H         LINE#         21
+  C:1509H         LINE#         22
+  C:1509H         LINE#         23
+  C:150CH         LINE#         24
+  C:150FH         LINE#         25
+  C:1512H         LINE#         26
+  C:1515H         LINE#         27
+  C:1518H         LINE#         28
+  C:151BH         LINE#         29
+  C:151EH         LINE#         30
   -------         ENDPROC       FLASHERASE
   -------         PROC          FLASHDISABLEAPROM
-  C:1568H         LINE#         32
-  C:1568H         LINE#         33
-  C:1568H         LINE#         34
-  C:156BH         LINE#         35
-  C:156EH         LINE#         36
-  C:1571H         LINE#         37
-  C:1574H         LINE#         38
-  C:1577H         LINE#         39
-  C:157AH         LINE#         40
+  C:156EH         LINE#         32
+  C:156EH         LINE#         33
+  C:156EH         LINE#         34
+  C:1571H         LINE#         35
+  C:1574H         LINE#         36
+  C:1577H         LINE#         37
+  C:157AH         LINE#         38
+  C:157DH         LINE#         39
+  C:1580H         LINE#         40
   -------         ENDPROC       FLASHDISABLEAPROM
   -------         PROC          FLASHWRITEBYTES
   -------         DO            
@@ -1431,25 +1430,25 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         DO            
   D:0005H         SYMBOL        i
   -------         ENDDO         
-  C:1420H         LINE#         56
-  C:1420H         LINE#         57
-  C:1420H         LINE#         58
-  C:1422H         LINE#         59
-  C:1422H         LINE#         60
-  C:1422H         LINE#         61
-  C:143CH         LINE#         62
-  C:1440H         LINE#         63
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 25
-
-
+  C:13FEH         LINE#         56
+  C:13FEH         LINE#         57
+  C:13FEH         LINE#         58
+  C:1400H         LINE#         59
+  C:1400H         LINE#         60
+  C:1400H         LINE#         61
+  C:141AH         LINE#         62
+  C:141EH         LINE#         63
   -------         ENDPROC       FLASHREAD
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 25
+
+
   -------         PROC          FLASHWRITE
-  C:15ABH         LINE#         66
-  C:15ABH         LINE#         67
-  C:15ABH         LINE#         68
-  C:15AEH         LINE#         69
-  C:15B1H         LINE#         70
-  C:15B4H         LINE#         71
+  C:15A0H         LINE#         66
+  C:15A0H         LINE#         67
+  C:15A0H         LINE#         68
+  C:15A3H         LINE#         69
+  C:15A6H         LINE#         70
+  C:15A9H         LINE#         71
   -------         ENDPROC       FLASHWRITE
   -------         ENDMOD        FLASH
 
@@ -1463,10 +1462,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00B0H         PUBLIC        P3
   D:00D8H         PUBLIC        PWMCON0
   D:00A8H         PUBLIC        IE
-  C:15B7H         PUBLIC        captureInit
+  C:15ACH         PUBLIC        captureInit
   D:00B8H         PUBLIC        IP
   C:126DH         PUBLIC        Capture_ISR
-  C:15EFH         SYMBOL        captureIOInit
+  C:15E4H         SYMBOL        captureIOInit
   X:0000H         SYMBOL        recv_data
   C:0512H         PUBLIC        analyzeRfData
   D:0098H         PUBLIC        SCON
@@ -1474,9 +1473,9 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   D:00E5H         PUBLIC        C0H
   D:00E4H         PUBLIC        C0L
   C:1042H         SYMBOL        _getCaptureVal
-  C:14FCH         PUBLIC        clearIrData
+  C:14DAH         PUBLIC        clearIrData
   D:00F8H         PUBLIC        SCON_1
-  C:145FH         SYMBOL        Timer2Init
+  C:143DH         SYMBOL        Timer2Init
   D:009BH         PUBLIC        EIE
   B:00C8H.2       PUBLIC        TR2
   X:0064H         PUBLIC        ir_data
@@ -1499,10 +1498,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:1046H         LINE#         21
   C:104CH         LINE#         22
   C:104CH         LINE#         23
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 26
-
-
   C:1058H         LINE#         24
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 26
+
+
   C:1058H         LINE#         25
   C:105EH         LINE#         26
   C:1064H         LINE#         28
@@ -1527,12 +1526,12 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:10ACH         LINE#         50
   -------         ENDPROC       _GETCAPTUREVAL
   -------         PROC          CLEARIRDATA
-  C:14FCH         LINE#         52
-  C:14FCH         LINE#         53
-  C:14FCH         LINE#         54
-  C:1503H         LINE#         55
-  C:150DH         LINE#         56
-  C:1514H         LINE#         57
+  C:14DAH         LINE#         52
+  C:14DAH         LINE#         53
+  C:14DAH         LINE#         54
+  C:14E1H         LINE#         55
+  C:14EBH         LINE#         56
+  C:14F2H         LINE#         57
   -------         ENDPROC       CLEARIRDATA
   -------         PROC          ANALYZERFDATA
   -------         DO            
@@ -1559,10 +1558,10 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:053EH         LINE#         69
   C:053EH         LINE#         70
   C:053FH         LINE#         71
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 27
-
-
   C:0549H         LINE#         72
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 27
+
+
   C:0549H         LINE#         73
   C:0558H         LINE#         74
   C:0567H         LINE#         75
@@ -1613,37 +1612,37 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:07E7H         LINE#         128
   -------         ENDPROC       ANALYZERFDATA
   -------         PROC          TIMER2INIT
-  C:145FH         LINE#         129
-  C:145FH         LINE#         130
-  C:145FH         LINE#         131
-  C:1462H         LINE#         132
-  C:1465H         LINE#         133
-  C:1468H         LINE#         134
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 28
+  C:143DH         LINE#         129
+  C:143DH         LINE#         130
+  C:143DH         LINE#         131
+  C:1440H         LINE#         132
+  C:1443H         LINE#         133
+  C:1446H         LINE#         134
+  C:1449H         LINE#         136
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 28
 
 
-  C:146BH         LINE#         136
-  C:146EH         LINE#         137
-  C:1471H         LINE#         138
-  C:1474H         LINE#         140
-  C:1477H         LINE#         141
-  C:147AH         LINE#         142
+  C:144CH         LINE#         137
+  C:144FH         LINE#         138
+  C:1452H         LINE#         140
+  C:1455H         LINE#         141
+  C:1458H         LINE#         142
   -------         ENDPROC       TIMER2INIT
   -------         PROC          CAPTUREIOINIT
-  C:15EFH         LINE#         143
-  C:15EFH         LINE#         144
-  C:15EFH         LINE#         145
-  C:15F2H         LINE#         146
-  C:15F5H         LINE#         147
+  C:15E4H         LINE#         143
+  C:15E4H         LINE#         144
+  C:15E4H         LINE#         145
+  C:15E7H         LINE#         146
+  C:15EAH         LINE#         147
   -------         ENDPROC       CAPTUREIOINIT
   -------         PROC          CAPTUREINIT
-  C:15B7H         LINE#         148
-  C:15B7H         LINE#         149
-  C:15B7H         LINE#         150
-  C:15BAH         LINE#         151
-  C:15BDH         LINE#         152
-  C:15C0H         LINE#         153
-  C:15C2H         LINE#         154
+  C:15ACH         LINE#         148
+  C:15ACH         LINE#         149
+  C:15ACH         LINE#         150
+  C:15AFH         LINE#         151
+  C:15B2H         LINE#         152
+  C:15B5H         LINE#         153
+  C:15B7H         LINE#         154
   -------         ENDPROC       CAPTUREINIT
   -------         PROC          CAPTURE_ISR
   -------         DO            
@@ -1679,8 +1678,8 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   -------         MODULE        ?C?IMUL
   C:099FH         PUBLIC        ?C?IMUL
   -------         ENDMOD        ?C?IMUL
-BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:17:05  PAGE 29
 
+BL51 BANKED LINKER/LOCATER V6.22                                                      09/01/2017  01:29:57  PAGE 29
 
 
   -------         MODULE        ?C?UIDIV
@@ -1720,5 +1719,5 @@ SYMBOL TABLE OF MODULE:  sant1ch (TIMER)
   C:0AA2H         PUBLIC        ?C?ICALL2
   -------         ENDMOD        ?C?ICALL
 
-Program Size: data=61.0 xdata=204 code=5630
+Program Size: data=61.0 xdata=204 code=5619
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

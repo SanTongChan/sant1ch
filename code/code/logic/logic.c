@@ -249,11 +249,10 @@ void dealRemote(void)
 }
 void logicInit(void)
 {
-	modeInit();
 	ledInit();
 	keyInit();
 	relayInit();
-	RfLedOffXt(50,50,5);
+	modeInit();
 	captureInit();
 	timer1Init();
     timer0Init();
