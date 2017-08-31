@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   TIMER                                                             09/01/2017 01:29:56 PAGE 1   
+C51 COMPILER V9.52.0.0   TIMER                                                             09/01/2017 01:37:04 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TIMER
@@ -50,42 +50,44 @@ line level    source
   39   1          static uint16_t update_local_cnt = 0;
   40   1          static uint16_t syn_app_cnt = 0;
   41   1          static uint16_t led_cnt = 0;
-  42   1          key_cnt++;
-  43   1          update_local_cnt++;
-  44   1          syn_app_cnt++;
-  45   1          led_cnt++;
-  46   1          if(key_cnt >= 100)
-  47   1          {
-  48   2              key_cnt = 0;
-  49   2              key_scan_flag = true;
-  50   2          }
-  51   1              if(led_cnt >= 100)
-  52   1              {
-  53   2                      led_cnt = 0;
-C51 COMPILER V9.52.0.0   TIMER                                                             09/01/2017 01:29:56 PAGE 2   
+  42   1              static uint16_t syn_threod = 0;
+  43   1          key_cnt++;
+  44   1          update_local_cnt++;
+  45   1          syn_app_cnt++;
+  46   1          led_cnt++;
+  47   1          if(key_cnt >= 100)
+  48   1          {
+  49   2              key_cnt = 0;
+  50   2              key_scan_flag = true;
+  51   2          }
+  52   1              if(led_cnt >= 100)
+  53   1              {
+C51 COMPILER V9.52.0.0   TIMER                                                             09/01/2017 01:37:04 PAGE 2   
 
-  54   2                      led_flag = true;
-  55   2              }
-  56   1          if(syn_app_cnt >= 1000)
-  57   1          {
-  58   2              syn_app_cnt = 0;
-  59   2              syn_app_flag = true;
-  60   2          }
-  61   1              if(update_local_cnt >= 1000)
-  62   1          {
-  63   2              update_local_cnt = 0;
-  64   2              update_local_flag = true;
-  65   2          }
-  66   1      
-  67   1      }
+  54   2                      led_cnt = 0;
+  55   2                      led_flag = true;
+  56   2              }
+  57   1          if(syn_app_cnt >= 10000 - syn_threod)
+  58   1          {
+  59   2                      syn_threod = 9000;
+  60   2              syn_app_cnt = 0;
+  61   2              syn_app_flag = true;
+  62   2          }
+  63   1              if(update_local_cnt >= 1000)
+  64   1          {
+  65   2              update_local_cnt = 0;
+  66   2              update_local_flag = true;
+  67   2          }
+  68   1      
+  69   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    173    ----
+   CODE SIZE        =    199    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =      8    ----
+   DATA SIZE        =     10    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
