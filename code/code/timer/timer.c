@@ -21,7 +21,7 @@ void timer1Init(void)
 	TMOD &= 0x0f;
 	TMOD |= 0x10;
 	CKCON &= 0x7f;
-	TH1 = 245;
+	TH1 = 245; //2ms
 	TL1 = 149;
 	ET1 = 1;
 	TR1 = 1;

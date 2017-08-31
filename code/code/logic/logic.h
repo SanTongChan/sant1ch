@@ -18,7 +18,7 @@ typedef struct
 	uint16_t timer_cnt;
 	DevMode dev_mode;
 	uint32_t remote_val;
-	uint8_t lock;
+	//uint8_t lock;
 	bool update_flag;
 	uint16_t jogging_time;
 	DevMode last_dev_mode;
@@ -30,8 +30,12 @@ extern bool key_scan_flag;
 extern bool update_local_flag;
 extern bool syn_app_flag;
 extern bool led_flag;
+extern bool save_mode_flag;
+
 void logicInit(void);
 void dealLogic(void);
 void incJoggingTime(void);
 void decJoggingTime(void);
+void saveModeToFlash(void);
+void dealRemote(void);
 #endif

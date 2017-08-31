@@ -8,6 +8,6 @@ void main(void)
 	{
 		dealLogic();
 		dealRemote();
-		//saveModeToFlash();
+		saveModeToFlash();
 	}
 }

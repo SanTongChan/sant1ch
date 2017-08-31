@@ -92,8 +92,3 @@ void RfLedOff(void)
 	RF_LED = 0;
 	led_def.led_status = LED_OFF;
 }
-void setLedProc(LedProc led_proc)
-{
-	led_def.led_proc = led_proc;
-}
-
