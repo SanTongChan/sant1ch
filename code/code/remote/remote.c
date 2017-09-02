@@ -2,7 +2,7 @@
 #include "N76E003.h"
 #include "led.h"
 #if 1
-sbit RF_PIN = P1^5;
+sbit RF_PIN = P1^4;
 
 typedef struct
 {
@@ -142,8 +142,8 @@ static void Timer2Init(void)
 }
 static void captureIOInit(void)
 {
-	P1M1 |= 0x20;
-	P1M2 &= 0XDF;
+	P1M1 |= 0x10;
+	P1M2 &= 0XEF;
 }
 void captureInit(void)
 {
