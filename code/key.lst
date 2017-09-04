@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:01:21 PAGE 1   
+C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:32:19 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE KEY
@@ -62,7 +62,7 @@ line level    source
   51   1              if(dev_def.dev_mode == DEV_REMOTE)
   52   1              {
   53   2                      dev_def.dev_mode = dev_def.last_dev_mode;
-C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:01:21 PAGE 2   
+C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:32:19 PAGE 2   
 
   54   2                      if(dev_def.dev_mode == DEV_SELFLOCK)//如果是自锁
   55   2                      {
@@ -126,7 +126,7 @@ line level    source
  113   2                      dev_def.dev_mode = DEV_SELFLOCK;//切换为自锁
  114   2                      dev_def.last_dev_mode = DEV_SELFLOCK;
  115   2                      CON_RELAY = 0;//关闭继电器
-C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:01:21 PAGE 3   
+C51 COMPILER V9.52.0.0   KEY                                                               09/05/2017 00:32:19 PAGE 3   
 
  116   2                      dev_def.update_flag = true;//允许更新
  117   2                      RfLedOff();//熄灭

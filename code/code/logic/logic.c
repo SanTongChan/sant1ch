@@ -159,7 +159,6 @@ static void updateLocal(void)
 		else
 		{
 			cnt = 0;
-			//RF_LED = !RF_LED;
 			dev_def.update_flag = false;
 		}
 	}

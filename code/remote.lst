@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:01:22 PAGE 1   
+C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:32:19 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE REMOTE
@@ -13,7 +13,7 @@ line level    source
    2          #include "N76E003.h"
    3          #include "led.h"
    4          #if 1
-   5          sbit RF_PIN = P1^4;
+   5          sbit RF_PIN = P1^2;
    6          
    7          typedef struct
    8          {
@@ -62,7 +62,7 @@ line level    source
   51          
   52          void clearIrData(void)
   53          {
-C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:01:22 PAGE 2   
+C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:32:19 PAGE 2   
 
   54   1              ir_data.cnt = 0;
   55   1              ir_data.ir_data = 0;
@@ -126,7 +126,7 @@ line level    source
  113   3                              ir_data.cnt = 1;
  114   3                              ir_data.timer_cnt = 0;
  115   3                              ir_data.low_time = (uint16_t)((short_time / 24) + 0.5);
-C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:01:22 PAGE 3   
+C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:32:19 PAGE 3   
 
  116   3                              ir_data.high_time = (uint16_t)((long_time / 24) + 0.5);
  117   3                      }
@@ -153,12 +153,12 @@ line level    source
  138   1              CAPCON1&=0xfe;
  139   1              //CAPCON2|=0x10;
  140   1              CAPCON3&=0xF0;
- 141   1              CAPCON3|=0x08;
+ 141   1              //CAPCON3|=0x08;
  142   1      }
  143          static void captureIOInit(void)
  144          {
- 145   1              P1M1 |= 0x10;
- 146   1              P1M2 &= 0XEF;
+ 145   1              P1M1 |= 0x04;
+ 146   1              P1M2 &= 0XFB;
  147   1      }
  148          void captureInit(void)
  149          {
@@ -182,7 +182,7 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    976    ----
+   CODE SIZE        =    973    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =    114    ----
    PDATA SIZE       =   ----    ----
@@ -191,7 +191,7 @@ MODULE INFORMATION:   STATIC OVERLAYABLE
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
 
-C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:01:22 PAGE 4   
+C51 COMPILER V9.52.0.0   REMOTE                                                            09/05/2017 00:32:19 PAGE 4   
 
 
 C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
