@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/02/2017 19:47:06 PAGE 1   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/05/2017 00:01:21 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE LOGIC
@@ -62,7 +62,7 @@ line level    source
   51   1              RfLedOnXt(10,10,1);//灯闪一次
   52   1      }
   53          void saveModeToFlash(void)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/02/2017 19:47:06 PAGE 2   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/05/2017 00:01:21 PAGE 2   
 
   54          {
   55   1          if(save_mode_flag)
@@ -126,7 +126,7 @@ line level    source
  113   4                                      dev_def.timer_cnt = 0;
  114   4                              }
  115   3                              if(dev_def.timer_cnt >= dev_def.jogging_time)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/02/2017 19:47:06 PAGE 3   
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/05/2017 00:01:21 PAGE 3   
 
  116   3                              {
  117   4                                      dev_def.timer_cnt = 0;
@@ -148,143 +148,156 @@ line level    source
  133          static void updateLocal(void)
  134          {
  135   1              static bool high_flag = false;
- 136   1              if(dev_def.update_flag)
- 137   1              {
- 138   2                      if(RELAY1 != CON_RELAY && high_flag == false)
- 139   2                      {
- 140   3                              high_flag = true;
- 141   3                              KEY = 0;
- 142   3                      }
- 143   2                      else if(high_flag == true)
- 144   2                      {
- 145   3                              high_flag = false;
- 146   3                              KEY = 1;
- 147   3                      }
- 148   2                      else
- 149   2                      {
- 150   3                              dev_def.update_flag = false;
+ 136   1              static uint8_t cnt = 0;
+ 137   1              if(cnt >= 3)
+ 138   1              {
+ 139   2                      cnt++;
+ 140   2                      if(cnt > 15)
+ 141   2                      {
+ 142   3                              cnt = 0;
+ 143   3                      }
+ 144   2              }
+ 145   1              if(dev_def.update_flag && cnt < 3)
+ 146   1              {
+ 147   2                      if(RELAY1 != CON_RELAY && high_flag == false)
+ 148   2                      {
+ 149   3                              high_flag = true;
+ 150   3                              KEY = 0;
  151   3                      }
- 152   2              }
- 153   1      }
- 154          void dealLogic(void)
- 155          {
- 156   1              if(key_scan_flag)
- 157   1          {
- 158   2              key_scan_flag = false;
- 159   2              keyScan();
- 160   2          }
- 161   1              if(syn_app_flag)
- 162   1              {
- 163   2                      syn_app_flag = false;
- 164   2                      syncApp();
+ 152   2                      else if(high_flag == true)
+ 153   2                      {
+ 154   3                              high_flag = false;
+ 155   3                              KEY = 1;
+ 156   3                              
+ 157   3                              cnt++;
+ 158   3                      }
+ 159   2                      else
+ 160   2                      {
+ 161   3                              cnt = 0;
+ 162   3                              //RF_LED = !RF_LED;
+ 163   3                              dev_def.update_flag = false;
+ 164   3                      }
  165   2              }
- 166   1              if(update_local_flag)
- 167   1          {
- 168   2              update_local_flag = false;
- 169   2              updateLocal();//要在同步APP之后
- 170   2          }
- 171   1              if(led_flag)
- 172   1              {
- 173   2                      led_flag = false;
- 174   2                      ledScan();
- 175   2              }
- 176   1      }
- 177          void dealRemoteStudy(void)
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/02/2017 19:47:06 PAGE 4   
+ 166   1      }
+ 167          void dealLogic(void)
+ 168          {
+ 169   1              if(key_scan_flag)
+ 170   1          {
+ 171   2              key_scan_flag = false;
+ 172   2              keyScan();
+ 173   2          }
+ 174   1              if(syn_app_flag)
+ 175   1              {
+ 176   2                      syn_app_flag = false;
+ 177   2                      syncApp();
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/05/2017 00:01:21 PAGE 4   
 
- 178          {
- 179   1          if(dev_def.dev_mode == DEV_REMOTE)//在remote学习模式下
+ 178   2              }
+ 179   1              if(update_local_flag)
  180   1          {
- 181   2              if(ir_data.cnt == 10)//已经连续接收到了相同的码值10次
- 182   2              {
- 183   3                              if(dev_def.last_dev_mode == DEV_SELFLOCK)//如果是自锁
- 184   3                              {
- 185   4                                      RfLedOffXt(30,30,4);//表示学习成功，灯300ms闪烁4次,最后灭
- 186   4                              }
- 187   3                              else if(dev_def.last_dev_mode == DEV_JOGGING)//如果是点动
- 188   3                              {
- 189   4                                      RfLedOnXt(30,30,4);//表示学习成功，灯300ms闪烁4次,最后亮
- 190   4                              }
- 191   3              }
- 192   2              if(ir_data.cnt >= 10 && ir_data.timer_cnt >= 150)//松手超过300ms
- 193   2              {
- 194   3                  dev_def.remote_val = ir_data.ir_data;//保存学习到的键值
- 195   3                  clearIrData();//清空遥控数据
- 196   3                  dev_def.dev_mode = dev_def.last_dev_mode;//退出remote模式，回到原来模式（jogging或selflock）
- 197   3                              save_mode_flag = true;//置位保存按钮
- 198   3              }
- 199   2          }
- 200   1      }
- 201          void dealRemoteNormal(void)
- 202          {
- 203   1          static uint16_t cnt = 0;
- 204   1          cnt++;
- 205   1          if(dev_def.dev_mode != DEV_REMOTE && dev_def.dev_mode != DEV_TIME)//判断是在自锁或点动模式下
- 206   1          {
- 207   2                      if(ir_data.ir_data == dev_def.remote_val && ir_data.cnt > 0)//接收到的键值相等且计数大于0
- 208   2                      {
- 209   3                              if(dev_def.dev_mode == DEV_SELFLOCK)//如果是自锁
- 210   3                              {
- 211   4                                      RfLedOffXt(5,5,1);//50ms闪烁1次，最终灭
- 212   4                              }
- 213   3                              else if(dev_def.dev_mode == DEV_JOGGING)//如果是点动
- 214   3                              {
- 215   4                                      RfLedOnXt(5,5,1);//50ms闪烁1次，最终亮
- 216   4                              }
- 217   3                      }
- 218   2              if(ir_data.cnt == 1)//如果已经接收到了一个有效遥控值
- 219   2              {
- 220   3      
- 221   3                              if(ir_data.ir_data == dev_def.remote_val)//判断是否跟已经学习的相等
- 222   3                              {
- 223   4                                      KEY = 0;//拉低按键
- 224   4                                      cnt = 0;//清空计数器
+ 181   2              update_local_flag = false;
+ 182   2              updateLocal();//要在同步APP之后
+ 183   2          }
+ 184   1              if(led_flag)
+ 185   1              {
+ 186   2                      led_flag = false;
+ 187   2                      ledScan();
+ 188   2              }
+ 189   1      }
+ 190          void dealRemoteStudy(void)
+ 191          {
+ 192   1          if(dev_def.dev_mode == DEV_REMOTE)//在remote学习模式下
+ 193   1          {
+ 194   2              if(ir_data.cnt == 10)//已经连续接收到了相同的码值10次
+ 195   2              {
+ 196   3                              if(dev_def.last_dev_mode == DEV_SELFLOCK)//如果是自锁
+ 197   3                              {
+ 198   4                                      RfLedOffXt(30,30,4);//表示学习成功，灯300ms闪烁4次,最后灭
+ 199   4                              }
+ 200   3                              else if(dev_def.last_dev_mode == DEV_JOGGING)//如果是点动
+ 201   3                              {
+ 202   4                                      RfLedOnXt(30,30,4);//表示学习成功，灯300ms闪烁4次,最后亮
+ 203   4                              }
+ 204   3              }
+ 205   2              if(ir_data.cnt >= 10 && ir_data.timer_cnt >= 150)//松手超过300ms
+ 206   2              {
+ 207   3                  dev_def.remote_val = ir_data.ir_data;//保存学习到的键值
+ 208   3                  clearIrData();//清空遥控数据
+ 209   3                  dev_def.dev_mode = dev_def.last_dev_mode;//退出remote模式，回到原来模式（jogging或selflock）
+ 210   3                              save_mode_flag = true;//置位保存按钮
+ 211   3              }
+ 212   2          }
+ 213   1      }
+ 214          void dealRemoteNormal(void)
+ 215          {
+ 216   1          static uint16_t cnt = 0;
+ 217   1          cnt++;
+ 218   1          if(dev_def.dev_mode != DEV_REMOTE && dev_def.dev_mode != DEV_TIME)//判断是在自锁或点动模式下
+ 219   1          {
+ 220   2                      if(ir_data.ir_data == dev_def.remote_val && ir_data.cnt > 0)//接收到的键值相等且计数大于0
+ 221   2                      {
+ 222   3                              if(dev_def.dev_mode == DEV_SELFLOCK)//如果是自锁
+ 223   3                              {
+ 224   4                                      RfLedOffXt(5,5,1);//50ms闪烁1次，最终灭
  225   4                              }
- 226   3              }
- 227   2              if(ir_data.timer_cnt >= 150 && ir_data.cnt >= 1
- 228   2                                      && ir_data.ir_data == dev_def.remote_val)//如果已经松手300ms，且是相等的
- 229   2              {
- 230   3                              KEY = 1;   //拉高按键
- 231   3                  if(cnt <= 2500)//5s内，证明非配置
- 232   3                  {      
- 233   4                                      CON_RELAY = !RELAY1;//控制继电器
- 234   4                                      dev_def.update_flag = true;//置位允许更新标志
- 235   4                  }
- 236   3                  clearIrData();//清空遥控器的参数
- 237   3              }
- 238   2          }
- 239   1      }
-C51 COMPILER V9.52.0.0   LOGIC                                                             09/02/2017 19:47:06 PAGE 5   
+ 226   3                              else if(dev_def.dev_mode == DEV_JOGGING)//如果是点动
+ 227   3                              {
+ 228   4                                      RfLedOnXt(5,5,1);//50ms闪烁1次，最终亮
+ 229   4                              }
+ 230   3                      }
+ 231   2              if(ir_data.cnt == 1)//如果已经接收到了一个有效遥控值
+ 232   2              {
+ 233   3      
+ 234   3                              if(ir_data.ir_data == dev_def.remote_val)//判断是否跟已经学习的相等
+ 235   3                              {
+ 236   4                                      KEY = 0;//拉低按键
+ 237   4                                      cnt = 0;//清空计数器
+ 238   4                              }
+ 239   3              }
+C51 COMPILER V9.52.0.0   LOGIC                                                             09/05/2017 00:01:21 PAGE 5   
 
- 240          void dealRemote(void)
- 241          {
- 242   1              if(deal_remote_flag)
- 243   1              {
- 244   2                      deal_remote_flag = false;
- 245   2                      analyzeRfData();
- 246   2                      dealRemoteStudy();
- 247   2                      dealRemoteNormal();
- 248   2              }
- 249   1      }
- 250          void logicInit(void)
- 251          {
- 252   1              ledInit();
- 253   1              keyInit();
- 254   1              relayInit();
- 255   1              modeInit();
- 256   1              captureInit();
- 257   1              timer1Init();
- 258   1          timer0Init();
- 259   1      }
- 260          
+ 240   2              if(ir_data.timer_cnt >= 150 && ir_data.cnt >= 1
+ 241   2                                      && ir_data.ir_data == dev_def.remote_val)//如果已经松手300ms，且是相等的
+ 242   2              {
+ 243   3                              KEY = 1;   //拉高按键
+ 244   3                  if(cnt <= 2500)//5s内，证明非配置
+ 245   3                  {      
+ 246   4                                      CON_RELAY = !RELAY1;//控制继电器
+ 247   4                                      dev_def.update_flag = true;//置位允许更新标志
+ 248   4                  }
+ 249   3                  clearIrData();//清空遥控器的参数
+ 250   3              }
+ 251   2          }
+ 252   1      }
+ 253          void dealRemote(void)
+ 254          {
+ 255   1              if(deal_remote_flag)
+ 256   1              {
+ 257   2                      deal_remote_flag = false;
+ 258   2                      analyzeRfData();
+ 259   2                      dealRemoteStudy();
+ 260   2                      dealRemoteNormal();
+ 261   2              }
+ 262   1      }
+ 263          void logicInit(void)
+ 264          {
+ 265   1              ledInit();
+ 266   1              keyInit();
+ 267   1              relayInit();
+ 268   1              modeInit();
+ 269   1              captureInit();
+ 270   1              timer1Init();
+ 271   1          timer0Init();
+ 272   1      }
+ 273          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =   1004    ----
+   CODE SIZE        =   1034    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =     11    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =     10    ----
+   DATA SIZE        =     11    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.

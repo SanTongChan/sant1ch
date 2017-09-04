@@ -133,7 +133,16 @@ static void syncApp(void)
 static void updateLocal(void)
 {
 	static bool high_flag = false;
-	if(dev_def.update_flag)
+	static uint8_t cnt = 0;
+	if(cnt >= 3)
+	{
+		cnt++;
+		if(cnt > 15)
+		{
+			cnt = 0;
+		}
+	}
+	if(dev_def.update_flag && cnt < 3)
 	{
 		if(RELAY1 != CON_RELAY && high_flag == false)
 		{
@@ -144,9 +153,13 @@ static void updateLocal(void)
 		{
 			high_flag = false;
 			KEY = 1;
+			
+			cnt++;
 		}
 		else
 		{
+			cnt = 0;
+			//RF_LED = !RF_LED;
 			dev_def.update_flag = false;
 		}
 	}
