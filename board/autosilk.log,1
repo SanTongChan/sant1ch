@@ -1,0 +1,54 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : sant1ch.brd                                   )
+(    Software Version : 16.5P003                                      )
+(    Date/Time        : Sun Aug 13 09:16:32 2017                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for the top of the board.
+
+Copying all elements.
+
+Element to Pad clearance is 0.000
+Max Text displacement is 100.000
+Min Line Length is 0.000
+Allowing 0, 90, 180 and 270 degree text rotations.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : None
+ Component Value      : None
+ Device Type          : None
+ Package Geometry     : Silkscreen
+ Reference Designator : Silkscreen
+ Tolerance            : None
+ User Part Number     : None
+
+Text string 'D4' is not at a suitable location
+(location: -1164.000, -88.567)
+Text string 'D3' is not at a suitable location
+(location: -1160.000, 6.433)
+Text string 'D1' is not at a suitable location
+(location: -1158.000, 37.567)
+Text string 'C2' is not at a suitable location
+(location: -703.567, -207.378)
+Text string 'R5' is not at a suitable location
+(location: 69.433, -213.378)
+Text string 'R4' is not at a suitable location
+(location: 220.567, -260.622)
+Text string 'R10' is not at a suitable location
+(location: -874.622, -500.567)
+Text string 'R11' is not at a suitable location
+(location: -83.567, -213.378)
+Text string 'R9' is not at a suitable location
+(location: -4.567, -213.378)
+Text string 'R6' is not at a suitable location
+(location: -960.378, -64.433)
+
+Total Failures: 10
+
+Log End
+
