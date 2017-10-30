@@ -1,14 +1,14 @@
 (---------------------------------------------------------------------)
 (                                                                     )
-(    DRILL LEGEND                                                     )
+(    Parameter File WRITE                                             )
 (                                                                     )
 (    Drawing          : sant1ch.brd                                   )
-(    Software Version : 16.5P003                                      )
-(    Date/Time        : Sat Oct 14 00:13:33 2017                      )
+(    Software Version : 16.5P002                                      )
+(    Date/Time        : Sat Oct 14 00:02:54 2017                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
 
-Begin processing of drill legend template file 'F:/Program Files (x86)/Cadence/SPB_16.5/share/pcb/text/nclegend/default-mil.dlt' ...
-End of drill legend template file processing.
-Drill Legend command cancelled.
+	Layout Name   : E:/workDir/san1ch/board/sant1ch.brd
+	Paramfile Name : C:/Users/Administrator/Desktop/doublepcb.prm
+

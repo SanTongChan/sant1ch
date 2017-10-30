@@ -3,21 +3,19 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  E:/workDir/san1ch/board/sant1ch.brd                                         |
-|                                                    Tue Aug 08 22:47:56 2017  |
+|                                                    Tue Aug 08 23:06:38 2017  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   CON_RELAY    pins MOVED FROM this net (to net name listed on right)
-                                 U7.20           -11.979 -10.770
-                                                                           KEY1
-                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-               pins ADDED TO this existing net (pins not previously on any net)
                                  U7.19           -11.979 -11.420
+                                                                           KEY1
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  KEY1         pins DELETED FROM this net (pin now not on any net)
-                                 U7.2            -17.779 -11.420
+  KEY1         pins MOVED FROM this net (to net name listed on right)
+                                 U7.20           -11.979 -10.770
+                                                                      CON_RELAY
 |------------------------------------------------------------------------------|
-|   total ECO changes reported  3                                              |
+|   total ECO changes reported  2                                              |
 |------------------------------------------------------------------------------|

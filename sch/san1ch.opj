@@ -106,19 +106,19 @@
       (Path "Design Resources" ".\san1ch.dsn")
       (Path "Design Resources" ".\san1ch.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" ".\san1ch.dsn" "SCHEMATIC1" "san1ch_MCU"))
+      (Select "Design Resources" ".\san1ch.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 279"))
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 279"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 50 1559 50 686")
-        (Scroll "-246 -12")
-        (Zoom "86")
+        (Placement "44 0 1 -1 -1 -8 -30 50 1395 50 474")
+        (Scroll "-133 27")
+        (Zoom "89")
         (Occurrence "/"))
       (Path "E:\WORKDIR\SAN1CH\SCH\SAN1CH.DSN")
       (Schematic "SCHEMATIC1")
