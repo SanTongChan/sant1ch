@@ -8991,4 +8991,106 @@
 \i (01:14:32) FORM dyn_xshape clearances  
 \i (01:14:34) FORM dyn_xshape thermal_relief_connects  
 \i (01:14:36) FORM dyn_xshape shape_fill  
-\i (01:14:37) F
+\i (01:14:37) FORM dyn_xshape void_controls  
+\i (01:14:41) FORM dyn_xshape art_format Gerber RS274X 
+\i (01:14:43) FORM dyn_xshape apply  
+\i (01:14:45) FORM dyn_xshape done  
+\i (01:14:48) setwindow pcb
+\i (01:14:48) artwork 
+\i (01:14:50) setwindow form.film_control
+\i (01:14:50) FORM film_control select_all  
+\i (01:14:53) FORM film_control general_parameters  
+\i (01:14:55) FORM film_control film_control  
+\i (01:14:58) FORM film_control create  
+\t (01:14:58) Checking db records
+\t (01:14:58)     checking for orphans...
+\t (01:14:58)     Checked  34 percent
+\t (01:14:58)     Checked  68 percent
+\t (01:14:58)     Checked 100 percent
+\t (01:14:58) Done dbdoctor.
+\t (01:14:58) Starting Create artwork films...
+\t (01:14:59) Plot generated.
+\i (01:15:04) FORM film_control ok  
+\i (01:15:04) setwindow pcb
+\i (01:15:04) generaledit 
+\i (01:15:22) nctape_full 
+\i (01:15:23) setwindow form.nc_drill
+\i (01:15:23) FORM nc_drill execute  
+\w (01:15:23) WARNING(SPMHMF-269): Design contains slot holes that can not be drilled. They can be processed by NC Route instead.
+\t (01:15:23) Starting NC Drill...
+\i (01:15:25) FORM nc_drill cancel  
+\i (01:15:26) setwindow pcb
+\i (01:15:26) generaledit 
+\i (01:15:33) ncroute 
+\i (01:15:34) setwindow form.nc_route
+\i (01:15:34) FORM nc_route execute  
+\t (01:15:34) Starting NC Route...
+\i (01:15:37) FORM nc_route cancel  
+\i (01:15:37) setwindow pcb
+\i (01:15:37) generaledit 
+\i (01:15:41) artwork 
+\i (01:15:43) setwindow form.film_control
+\i (01:15:43) FORM film_control select_all  
+\i (01:15:44) FORM film_control general_parameters  
+\i (01:15:48) FORM film_control format_int_places 3 
+\i (01:15:48) FORM film_control film_control  
+\i (01:15:51) FORM film_control general_parameters  
+\i (01:15:52) FORM film_control film_control  
+\i (01:16:00) FORM film_control general_parameters  
+\i (01:16:03) FORM film_control film_control  
+\i (01:16:08) FORM film_control create  
+\t (01:16:08) Checking db records
+\t (01:16:08)     checking for orphans...
+\t (01:16:08)     Checked  34 percent
+\t (01:16:08)     Checked  68 percent
+\t (01:16:08)     Checked 100 percent
+\t (01:16:08) Done dbdoctor.
+\t (01:16:08) Starting Create artwork films...
+\t (01:16:10) Plot generated.
+\i (01:16:12) FORM film_control ok  
+\i (01:16:12) setwindow pcb
+\i (01:16:12) generaledit 
+\i (01:16:13) zoom in 1 
+\i (01:16:13) setwindow pcb
+\i (01:16:13) zoom in -985.354 -627.152
+\t (01:16:13) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (01:16:13) trapsize 19053
+\i (01:16:13) zoom in 1 
+\i (01:16:13) setwindow pcb
+\i (01:16:13) zoom in -989.165 -627.152
+\i (01:16:13) trapsize 9527
+\i (01:16:14) zoom out 1 
+\i (01:16:14) setwindow pcb
+\i (01:16:14) zoom out -991.070 -627.152
+\i (01:16:14) trapsize 19053
+\i (01:16:14) zoom out 1 
+\i (01:16:14) setwindow pcb
+\i (01:16:14) zoom out -991.070 -634.773
+\t (01:16:14) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (01:16:14) trapsize 38107
+\i (01:16:14) zoom in 1 
+\i (01:16:14) setwindow pcb
+\i (01:16:14) zoom in -1640.787 -688.122
+\t (01:16:14) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (01:16:14) trapsize 19053
+\i (01:16:15) zoom out 1 
+\i (01:16:15) setwindow pcb
+\i (01:16:15) zoom out -1640.787 -691.933
+\t (01:16:15) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (01:16:15) trapsize 38107
+\i (01:16:16) zoom in 1 
+\i (01:16:16) setwindow pcb
+\i (01:16:16) zoom in -1640.787 -650.016
+\t (01:16:16) Grids are drawn 16.000, 16.000 apart for enhanced viewability.
+\i (01:16:16) trapsize 19053
+\i (01:19:17) exit 
+\e (01:19:17) Do you want to save the changes you made to E:/workDir/san1ch/board/sant1ch.brd?
+\i (01:19:20) fillin menu_cancel 
+\i (01:19:20) generaledit 
+\i (01:19:22) save 
+\i (01:19:23) fillin yes 
+\i (01:19:23) generaledit 
+\t (01:19:30) Grids are drawn 64.000, 64.000 apart for enhanced viewability.
+\i (01:19:30) trapsize 26225
+\i (01:19:31) exit 
+\t (01:19:32)     Journal end - Tue Oct 31 02:22:11 2017
